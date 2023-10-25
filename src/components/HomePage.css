@@ -1,0 +1,24 @@
+.homePage {
+    text-align: center;
+    position: relative;
+  }
+  
+  .topBar {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tshirtContainer {
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .searchBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
