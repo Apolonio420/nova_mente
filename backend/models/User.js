@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
 
 const UserSchema = new mongoose.Schema({
   email: {
@@ -10,6 +11,14 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   }
+});
+
+// Encriptar la contraseña antes de guardar el usuario
+UserSchema.pre('save', async function(next) {
+  if (this.isModified('password')) {
+    this.password = await bcrypt.hash(this.password, 8);
+  }
+  next();
 });
 
 const User = mongoose.model('User', UserSchema);
