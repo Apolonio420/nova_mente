@@ -20,7 +20,6 @@ fs.readdir(imagesFolder, (err, files) => {
   // Crea un array de objetos para cada imagen
   const imagesData = imageFiles.map(file => {
     return {
-      imageUrl: path.join(imagesFolder, file),
       description: path.basename(file, path.extname(file)) // Usa el nombre del archivo como descripción
     };
   });
