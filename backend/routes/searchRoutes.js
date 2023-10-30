@@ -8,17 +8,37 @@ router.get('/test', (req, res) => {
   res.send("Test route is working");
 });
 
+// Middleware de prueba antes de /search
 router.use('/search', (req, res, next) => {
   console.log("Middleware de prueba antes de /search");
   next();
 });
 
+// Nueva ruta POST para '/search'
+router.post('/search', async (req, res) => {
+  try {
+    const userQuery = req.body.query;
+    const userId = req.body.userId;
+
+    // Aquí puedes procesar la consulta del usuario y realizar las operaciones necesarias
+    // ...
+
+    // Devolver una respuesta
+    res.status(200).json({
+      success: true,
+      message: 'Tu mensaje aquí'
+    });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ success: false, message: 'Internal Server Error' });
+  }
+});
+
+// Ruta POST para '/test'
 router.post('/test', async (req, res) => {
   console.log("Petición recibida en /test");
   
   try {
-    console.log("Dentro del bloque try en /test");
-    
     const userQuery = req.body.query;
     const userId = req.body.userId;
     
@@ -45,6 +65,5 @@ router.post('/test', async (req, res) => {
     res.status(500).json({ success: false, message: 'Internal Server Error' });
   }
 });
-
 
 module.exports = router;
