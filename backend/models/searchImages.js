@@ -26,7 +26,7 @@ const searchImages = async (query) => {
 };
 
 // Usar la función para buscar imágenes
-const testQuery = "shark";  // Reemplaza esto con tu propia consulta de prueba
+//const testQuery = "shark";  // Reemplaza esto con tu propia consulta de prueba
 searchImages(testQuery)
   .then(images => {
     console.log('Imágenes encontradas:', images);
@@ -35,4 +35,4 @@ searchImages(testQuery)
   .catch(err => {
     console.error('Error al realizar la búsqueda:', err);
     mongoose.connection.close();
-  });
+  });//

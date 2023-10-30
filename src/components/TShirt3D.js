@@ -1,30 +1,58 @@
-import React, { useEffect, useRef } from 'react';
-import { Canvas, useThree, useLoader } from '@react-three/fiber';
+import React, { useEffect, useState, useRef } from 'react';
+import { Canvas, useThree } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { TextureLoader } from 'three';
-import { OrbitControls } from '@react-three/drei';
-import sampleImage from '/home/apolonio420/nova_mente/public/dog1.jpg';  // Replace with the path to your sample image
+import { TextureLoader } from 'three';  
+import { OrbitControls, Box } from '@react-three/drei';
 
-const TShirt3D = ({ image }) => {
-  const mesh = useRef(null);
-  const { scene } = useThree();
-  const gltf = useLoader(GLTFLoader, '/path/to/your/tshirt/model.gltf');  // Replace with the path to your t-shirt 3D model
-  const texture = useLoader(TextureLoader, image || sampleImage);  // Load the image as texture
+const SetCameraPosition = () => {
+  const { camera } = useThree();
+  camera.position.set(0, 0, 20);
+  camera.lookAt(0, 0, 0);
+  return null;
+};
+
+const TShirt3D = ({ images }) => {
+  const [model, setModel] = useState(null);
+  const controlsRef = useRef();
 
   useEffect(() => {
-    if (gltf) {
-      // Assuming that the mesh is the first child of the loaded model
-      const tshirtMesh = gltf.scene.children[0];
-      tshirtMesh.material.map = texture;  // Apply the texture to the t-shirt mesh
-      scene.add(gltf.scene);
-    }
-  }, [gltf, scene, texture]);
+    const loader = new GLTFLoader();
+    const textureLoader = new TextureLoader();  // Moverlo dentro de useEffect
+
+    loader.load(
+      '/shirt_baked.glb',
+      (gltf) => {
+        gltf.scene.traverse((child) => {
+          if (child.name === "lambert1") {
+            if (images.length > 0) {
+              textureLoader.load(images[0].url, (texture) => {
+                child.material.map = texture;
+                child.material.needsUpdate = true;
+              });
+            }
+          }
+        });
+        setModel(gltf.scene);
+      },
+      undefined,
+      (error) => {
+        console.error('An error occurred:', error);
+      }
+    );
+  }, [images]);
 
   return (
-    <Canvas>
-      <ambientLight intensity={0.5} />
-      <OrbitControls />
-    </Canvas>
+    <div style={{ height: '50vh', width: '100%' }}>
+      <Canvas>
+        <SetCameraPosition />
+        <ambientLight intensity={0.5} />
+        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+        <pointLight position={[-10, -10, -10]} />
+        {model ? <primitive object={model} position={[0, 0, 0]} scale={35} /> : null}
+        {model ? null : <Box args={[1, 1, 1]} position={[0, 0, 0]}><meshStandardMaterial color={"blue"} /></Box>}
+        <OrbitControls ref={controlsRef} enablePan={false} minPolarAngle={Math.PI / 4} maxPolarAngle={Math.PI / 2} minDistance={1} maxDistance={50} />
+      </Canvas>
+    </div>
   );
 };
 
