@@ -15,7 +15,7 @@ router.use('/search', (req, res, next) => {
 });
 
 // Nueva ruta POST para '/search'
-router.post('/search', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const userQuery = req.body.query;
     const userId = req.body.userId;
