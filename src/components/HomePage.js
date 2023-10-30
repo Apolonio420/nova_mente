@@ -29,7 +29,7 @@ const HomePage = () => {
       <div className="topBar">
         {/* Aquí van los botones y otros elementos que quieras en la parte superior */}
       </div>
-      <div className="tshirtContainer">
+      <div className="tshirtContainer"> 
         <TShirt2D images={images} />
       </div>
       <div className="searchBar">
