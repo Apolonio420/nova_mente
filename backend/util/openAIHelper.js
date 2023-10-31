@@ -3,83 +3,44 @@ const mongoose = require('mongoose');
 const Image = require('../models/Image');  
 const ImageQuery = require('../models/ImageQuery'); 
 
-const openai = new OpenAIAPI({ apiKey: "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" });
+const openai = new OpenAIAPI({ apiKey: "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" });
 
 mongoose.connect('mongodb+srv://codeduostudios:YKCbGRPp3fIaPCuD@novamente.pibypbv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-.then(() => {
-    console.log('Conectado a MongoDB');
-})
-.catch(err => {
-    console.error('Error al conectar a MongoDB:', err);
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => {
+  console.log('Conectado a MongoDB');
+}).catch(err => {
+  console.error('Error al conectar a MongoDB:', err);
 });
 
 const processUserQuery = async (userQuery, userId) => {
-  console.log("Dentro de processUserQuery");  // Nuevo log
-  
+  console.log("Dentro de processUserQuery");
   try {
-    // Transform the user query using OpenAI API
     const prompt = `Describe a detailed image based on the following user query for a T-shirt design: "${userQuery}"`;
     const maxTokens = 20;
-    
-    console.log("Antes de llamar a OpenAI");  // Nuevo log
-    
+    console.log("Antes de llamar a OpenAI");
     const openAIResponse = await openai.completions.create({
       model: "text-davinci-002",
       prompt,
       max_tokens: maxTokens,
     });
-    
-    console.log("Después de llamar a OpenAI");  // Nuevo log
-
+    console.log("Después de llamar a OpenAI");
     const improvedQuery = openAIResponse.choices[0].text.trim();
-    
-    const concise_descriptions = [
-      "Blue shark swimming left, coral background.",
-      "Grey shark jumping over waves, 'SHARK' above.",
-      "White and grey shark, open mouth, in blue circle."
-    ];
-  
-    const styles = [
-      "flat 2d, watercolour, clean, simple, white background, professional t-shirt design vector",
-      "flat 2d, mottled style, clean, simple, white background, professional t-shirt design vector",
-      "flat 2d, watercolour, clean, simple, white background, enclosed in a circle, professional t-shirt design vector"
-    ];
-  
-    const creativePrompts = [];
-    for (let i = 0; i < concise_descriptions.length; i++) {
-      const description = concise_descriptions[i];
-      const style = styles[i];
-      const creative_prompt = `${description}, ${style}`;
-      creativePrompts.push(creative_prompt);
-    }
-  
-    const images = await Image.find(
-      { $text: { $search: improvedQuery } },
-      { score: { $meta: "textScore" } }
-    )
-    .sort({ score: { $meta: "textScore" } })
-    .limit(5);
-  
-    const newImageQuery = new ImageQuery({
-      query: userQuery,
-      userId: userId
-    });
-  
-    await newImageQuery.save();
-  
+
+    // Buscar imágenes basadas en la consulta mejorada
+    const images = await Image.find({ $text: { $search: improvedQuery } });
+
+    // Generar creativePrompts basados en la consulta mejorada (o en las imágenes encontradas)
+    const creativePrompts = images.map(image => `${image.description}, ${image.style}`); // Asumiendo que cada imagen tiene una descripción y un estilo
+
     return {
       images: images.map(image => image.imageUrl),
-      creativePrompts: creativePrompts
+      creativePrompts
     };
-
   } catch (error) {
-    console.log("Error en processUserQuery:", error);  // Nuevo log
+    console.log("Error en processUserQuery:", error);
   }
 };
 
-
-// Exporta la función para que pueda ser usada en otros archivos
 module.exports = { processUserQuery };

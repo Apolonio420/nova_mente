@@ -8,12 +8,12 @@ const HomePage = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    console.log("useEffect llamado, searchTerm:", searchTerm); // Log agregado
+    console.log("useEffect llamado, searchTerm:", searchTerm);
     if (searchTerm) {
-      console.log("Enviando petición a /api/search"); // Log agregado
-      axios.post('http://localhost:3001/api/search', { query: searchTerm }) // Asegúrate de que la URL sea correcta
+      console.log("Enviando petición a /api/search");
+      axios.post('http://localhost:3001/api/search', { query: searchTerm })
         .then(response => {
-          console.log("Respuesta del servidor:", response.data); // Log agregado
+          console.log("Respuesta del servidor:", response.data);
           if (response.data.success) {
             setImages(response.data.images);
           }
@@ -26,22 +26,20 @@ const HomePage = () => {
 
   return (
     <div className="homePage">
-      <div className="topBar">
-        {/* Aquí van los botones y otros elementos que quieras en la parte superior */}
-      </div>
-      <div className="tshirtContainer"> 
+      <div className="topBar">{/* ... */}</div>
+      <div className="tshirtContainer">
         <TShirt2D images={images} />
       </div>
       <div className="searchBar">
-        <input 
-          type="text" 
-          placeholder="Buscar remera..." 
+        <input
+          type="text"
+          placeholder="Buscar remera..."
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
         />
       </div>
     </div>
   );
-}
+};
 
 export default HomePage;
