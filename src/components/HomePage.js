@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import TShirt2D from './TShirt2D';
+import TShirt3D from './TShirt3D';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -8,12 +8,12 @@ const HomePage = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    console.log("useEffect llamado, searchTerm:", searchTerm);
+    console.log('useEffect llamado, searchTerm:', searchTerm);
     if (searchTerm) {
-      console.log("Enviando petición a /api/search");
+      console.log('Enviando petición a /api/search');
       axios.post('http://localhost:3001/api/search', { query: searchTerm })
         .then(response => {
-          console.log("Respuesta del servidor:", response.data);
+          console.log('Respuesta del servidor:', response.data);
           if (response.data.success) {
             setImages(response.data.images);
           }
@@ -25,15 +25,17 @@ const HomePage = () => {
   }, [searchTerm]);
 
   return (
-    <div className="homePage">
-      <div className="topBar">{/* ... */}</div>
-      <div className="tshirtContainer">
-        <TShirt2D images={images} />
+    <div className='homePage'>
+      <div className='topBar'>
+        {/* Aquí puedes añadir elementos a la barra superior, como un logo o menús */}
       </div>
-      <div className="searchBar">
+      <div className='tshirtContainer'>
+        <TShirt3D images={images} />
+      </div>
+      <div className='searchBar'>
         <input
-          type="text"
-          placeholder="Buscar remera..."
+          type='text'
+          placeholder='Buscar remera...'
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
         />

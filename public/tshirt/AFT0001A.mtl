@@ -1,0 +1,8 @@
+# MTL Exporter v1.0 by Seungwoo Oh at CLO - Virtual Fashion Inc.
+newmtl AFT0001A_FRONT_2451
+Ka 0.257132 0.257132 0.257132
+Kd 0.819608 0.819608 0.819608
+Ks 0.045000 0.045000 0.045000
+Ns 9.901810
+illum 2
+map_Kn AFT0001A_normal_1001.png

@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { TextureLoader } from 'three';  
-import { OrbitControls, Box } from '@react-three/drei';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
+import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
+import { TextureLoader } from 'three';
+import { OrbitControls } from '@react-three/drei';
+import * as THREE from 'three';
 
 const SetCameraPosition = () => {
   const { camera } = useThree();
-  camera.position.set(0, 0, 20);
+  camera.position.set(0, 0, 50);
   camera.lookAt(0, 0, 0);
   return null;
 };
@@ -16,41 +18,54 @@ const TShirt3D = ({ images }) => {
   const controlsRef = useRef();
 
   useEffect(() => {
-    const loader = new GLTFLoader();
-    const textureLoader = new TextureLoader();  // Moverlo dentro de useEffect
-
-    loader.load(
-      '/shirt_baked.glb',
-      (gltf) => {
-        gltf.scene.traverse((child) => {
-          if (child.name === "lambert1") {
-            if (images.length > 0) {
-              textureLoader.load(images[0].url, (texture) => {
-                child.material.map = texture;
-                child.material.needsUpdate = true;
-              });
-            }
+    const defaultImage = '/dog1.png'; // Imagen predeterminada
+    const imageToLoad = images.length > 0 ? images[0] : defaultImage;
+  
+    const objLoader = new OBJLoader();
+    const mtlLoader = new MTLLoader();
+    const textureLoader = new THREE.TextureLoader();
+  
+    // Cargar el mapa de opacidad
+    const opacityMap = textureLoader.load('/tshirt/map/AFT0001A_opacity_1001.png');
+  
+    mtlLoader.load('/tshirt/AFT0001A.mtl', (materials) => {
+      materials.preload();
+      objLoader.setMaterials(materials);
+      objLoader.load('/tshirt/AFT0001A.obj', (obj) => {
+        obj.traverse((child) => {
+          if (child.isMesh) {
+            const mainTexture = textureLoader.load(imageToLoad);
+            const normalMap = textureLoader.load('/tshirt/normal_map.png');
+            const displacementMap = textureLoader.load('/tshirt/displacement_map.png');
+  
+            // Aplicar el mapa de opacidad y configurar la transparencia
+            child.material[0].opacityMap = opacityMap;
+            child.material[0].transparent = false;
+  
+            child.material[0].map = mainTexture;
+            child.material[0].normalMap = normalMap;
+            child.material[0].displacementMap = displacementMap;
+  
+            child.material[0].needsUpdate = true;
           }
         });
-        setModel(gltf.scene);
-      },
-      undefined,
-      (error) => {
-        console.error('An error occurred:', error);
-      }
-    );
+        obj.scale.set(0.5, 0.5, 0.5);
+        obj.position.set(0, -45, 0);
+        setModel(obj);
+      });
+    });
   }, [images]);
-
+  
+  
   return (
-    <div style={{ height: '50vh', width: '100%' }}>
+    <div style={{ height: '80vh', width: '100%' }}>
       <Canvas>
         <SetCameraPosition />
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
-        {model ? <primitive object={model} position={[0, 0, 0]} scale={35} /> : null}
-        {model ? null : <Box args={[1, 1, 1]} position={[0, 0, 0]}><meshStandardMaterial color={"blue"} /></Box>}
-        <OrbitControls ref={controlsRef} enablePan={false} minPolarAngle={Math.PI / 4} maxPolarAngle={Math.PI / 2} minDistance={1} maxDistance={50} />
+        {model ? <primitive object={model} /> : null}
+        <OrbitControls ref={controlsRef} enablePan={false} minPolarAngle={Math.PI / 4} maxPolarAngle={Math.PI / 2} minDistance={1} maxDistance={100} />
       </Canvas>
     </div>
   );

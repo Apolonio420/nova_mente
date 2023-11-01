@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Image = require('../models/Image');  
 const ImageQuery = require('../models/ImageQuery'); 
 
-const openai = new OpenAIAPI({ apiKey: "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" });
+const openai = new OpenAIAPI({ apiKey: "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" });
 
 mongoose.connect('mongodb+srv://codeduostudios:YKCbGRPp3fIaPCuD@novamente.pibypbv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
   useNewUrlParser: true,
