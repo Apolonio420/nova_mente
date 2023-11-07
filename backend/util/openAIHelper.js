@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Image = require('../models/Image');  
 const ImageQuery = require('../models/ImageQuery'); 
 
-const openai = new OpenAIAPI({ apiKey: "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" });
+const openai = new OpenAIAPI({ apiKey: "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" });
 
 mongoose.connect('mongodb+srv://codeduostudios:YKCbGRPp3fIaPCuD@novamente.pibypbv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
   useNewUrlParser: true,
@@ -31,15 +31,24 @@ const processUserQuery = async (userQuery, userId) => {
     // Buscar imágenes basadas en la consulta mejorada
     const images = await Image.find({ $text: { $search: improvedQuery } });
 
-    // Generar creativePrompts basados en la consulta mejorada (o en las imágenes encontradas)
-    const creativePrompts = images.map(image => `${image.description}, ${image.style}`); // Asumiendo que cada imagen tiene una descripción y un estilo
+    // Guardar la consulta del usuario
+    const imageQuery = new ImageQuery({
+      userId,
+      query: userQuery,
+      improvedQuery
+    });
+    await imageQuery.save();
 
     return {
-      images: images.map(image => image.imageUrl),
-      creativePrompts
+      images: images.map(image => ({
+        url: image.imageUrl,
+        description: image.description,
+        niche: image.niche
+      })),
     };
   } catch (error) {
-    console.log("Error en processUserQuery:", error);
+    console.error("Error en processUserQuery:", error);
+    throw error; // Es importante lanzar el error para manejarlo en el llamador.
   }
 };
 

@@ -34,46 +34,49 @@ const TShirt3D = ({ images }) => {
 
   useEffect(() => {
     const defaultImage = '/dog1.png';
-    const imageToLoad = images.length > 0 ? images[0] : defaultImage;
-
+    // Elimina el uso de encodeURI si las URLs ya están codificadas en la base de datos
+    const imageToLoad = images.length > 0 ? images[0].url : defaultImage;
+  
     const objLoader = new OBJLoader();
     const mtlLoader = new MTLLoader();
     const textureLoader = new THREE.TextureLoader();
-
-    const myTexture = textureLoader.load(imageToLoad);
-    myTexture.premultiplyAlpha = true;
-
-    const myCustomMaterial = new ShaderMaterial({
-      uniforms: {
-        myTexture: { value: myTexture },
-        originalTexture: { value: new THREE.TextureLoader().load('/tshirt/map/AFT0001A_diffuse_1001.png') },
-        backgroundColor: { value: new Color('gray') },
-      },
-      vertexShader: `
-        varying vec2 vUv;
-        void main() {
-          vUv = uv;
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-        }
-      `,
-      fragmentShader: `
-      uniform sampler2D myTexture;
-      uniform sampler2D originalTexture;
-      uniform vec3 backgroundColor;
-      varying vec2 vUv;
-      void main() {
-        vec2 center = vec2(0.251153, 0.335014);
-        vec2 diff = vUv - center;
-        vec4 originalColor = texture2D(originalTexture, vUv);
-        vec4 customTexture = texture2D(myTexture, (vUv - center) * 5.0 + 0.5);
-        if (abs(diff.x) < 0.1 && abs(diff.y) < 0.1) {
-          gl_FragColor = mix(originalColor, customTexture, customTexture.a);
-        } else {
-          gl_FragColor = originalColor;
-        }
+  
+    textureLoader.load(imageToLoad, (texture) => {
+      console.log('Imagen cargada con éxito:', imageToLoad);
+      console.log('Texture Object:', texture);
+      
+      texture.premultiplyAlpha = true;
+    
+      const myCustomMaterial = new ShaderMaterial({
+        uniforms: {
+          myTexture: { value: texture },
+          originalTexture: { value: new THREE.TextureLoader().load('/tshirt/map/AFT0001A_diffuse_1001.png') },
+          backgroundColor: { value: new Color('gray') },
+        },
+  vertexShader: `
+    varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  fragmentShader: `
+    uniform sampler2D myTexture;
+    uniform sampler2D originalTexture;
+    varying vec2 vUv;
+    void main() {
+      vec2 center = vec2(0.251153, 0.335014);
+      vec2 diff = vUv - center;
+      vec4 originalColor = texture2D(originalTexture, vUv);
+      vec4 customTexture = texture2D(myTexture, (vUv - center) * 5.0 + 0.5);
+      if (abs(diff.x) < 0.1 && abs(diff.y) < 0.1) {
+        gl_FragColor = mix(originalColor, customTexture, customTexture.a);
+      } else {
+        gl_FragColor = originalColor;
       }
-      `,
-    });
+    }
+  `,
+});
 
     mtlLoader.load('/tshirt/AFT0001A.mtl', (materials) => {
       materials.preload();
@@ -91,7 +94,14 @@ const TShirt3D = ({ images }) => {
         setModel(obj);
       });
     });
-  }, [images]);
+
+  }, (xhr) => {
+    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+  }, (error) => {
+    console.error('Error al cargar la imagen:', imageToLoad, error);
+  });
+
+}, [images]);
 
   return (
     <div style={{ height: '80vh', width: '100%' }}>
