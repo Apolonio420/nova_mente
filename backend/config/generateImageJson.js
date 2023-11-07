@@ -1,36 +1,40 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
+const glob = require('glob');
 
-// Define la carpeta que contiene tus imágenes
-const imagesFolder = path.join(__dirname, 'images', 'batch 1');
+const imagesRootFolder = path.join(__dirname, '..', '..', 'src', 'images', 'batch 1');
+const outputJsonFile = path.join(imagesRootFolder, '..', 'imagenes.json');
 
-// Define el archivo JSON de salida
-const outputJsonFile = path.join(__dirname, 'imagenes1.json');
+function findImages(pattern) {
+  return new Promise((resolve, reject) => {
+    glob(pattern, (err, files) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(files);
+      }
+    });
+  });
+}
 
-// Lee la carpeta de imágenes
-fs.readdir(imagesFolder, (err, files) => {
-  if (err) {
-    console.error('Error al leer la carpeta de imágenes:', err);
-    return;
+(async function generateImagesJson() {
+  try {
+    console.log("Iniciando el script...");
+    console.log(`La carpeta de imágenes es: ${imagesRootFolder}`);
+    console.log(`El archivo JSON de salida es: ${outputJsonFile}`);
+
+    const files = await findImages(`${imagesRootFolder}/**/*.png`);
+    const imagesList = files.map(file => ({
+      imageUrl: path.relative(imagesRootFolder, file),
+      description: path.basename(file, '.png'),
+      niche: path.basename(path.dirname(file))
+    }));
+
+    console.log(`Total de imágenes procesadas: ${imagesList.length}`);
+
+    await fs.writeFile(outputJsonFile, JSON.stringify(imagesList, null, 2), 'utf8');
+    console.log(`Archivo JSON generado en: ${outputJsonFile}`);
+  } catch (error) {
+    console.error('Error durante la generación del JSON:', error);
   }
-
-  // Filtra los archivos para obtener solo imágenes (p.ej., archivos .jpg y .png)
-  const imageFiles = files.filter(file => ['.jpg', '.png'].includes(path.extname(file)));
-
-  // Crea un array de objetos para cada imagen
-  const imagesData = imageFiles.map(file => {
-    return {
-      description: path.basename(file, path.extname(file)) // Usa el nombre del archivo como descripción
-    };
-  });
-
-  // Escribe el array de objetos en un archivo JSON
-  fs.writeFile(outputJsonFile, JSON.stringify(imagesData, null, 2), 'utf8', err => {
-    if (err) {
-      console.error('Error al escribir el archivo JSON:', err);
-      return;
-    }
-
-    console.log('Archivo JSON creado exitosamente.');
-  });
-});
+})();

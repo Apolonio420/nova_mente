@@ -1,57 +1,26 @@
-const connectDB = require('./connectMongo'); // Asegúrate de que esta es la ruta correcta a tu archivo connectMongo.js
+const connectDB = require('./connectMongo');
 const fs = require('fs');
-const AWS = require('aws-sdk');
-const Image = require('../models/Image'); // Importa tu modelo Image
+const Image = require('../models/Image');
+const path = require('path');
 
-// Configura AWS
-AWS.config.update({
-  accessKeyId: 'AKIAVWKDZK4OYSTDSE4C',
-  secretAccessKey: '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',
-  region: 'sa-east-1'
-});
+async function uploadImagesToDB() {
+  await connectDB();
 
-const s3 = new AWS.S3();
-
-// Leer archivo JSON
-fs.readFile('./imagenes1.json', 'utf8', async (err, data) => {
-  if (err) {
-    console.error('Error al leer el archivo:', err);
-    return;
-  }
-
+  const jsonPath = path.join(__dirname, 'imagenes.json');
+  const data = fs.readFileSync(jsonPath, 'utf8');
   const images = JSON.parse(data);
 
-  try {
-    // Conectar a la base de datos
-    await connectDB();
+  for (const image of images) {
+    const newImage = new Image({
+      imageUrl: image.imageUrl,
+      description: image.description,
+      niche: image.niche // Utiliza el campo niche
+    });
 
-    // Iterar sobre las imágenes
-    for (const image of images) {
-      const fileContent = fs.readFileSync(image.imageUrl);
-
-      // Parámetros para S3
-      const params = {
-        Bucket: 'novamente42',
-        Key: image.description + '.jpg', // o '.png'
-        Body: fileContent,
-        ContentType: 'image/jpeg', // o 'image/png'
-        ACL: 'public-read'
-      };
-
-      // Subir imagen a S3
-      const uploaded = await s3.upload(params).promise();
-
-      // Crear nuevo registro en MongoDB
-      const newImage = new Image({
-        imageUrl: uploaded.Location,
-        description: image.description,
-      });
-
-      await newImage.save();
-    }
-
-    console.log('Todas las imágenes se han guardado exitosamente.');
-  } catch (error) {
-    console.error('Error al guardar las imágenes:', error);
+    await newImage.save();
   }
-});
+
+  console.log('Todas las imágenes se han guardado exitosamente en la base de datos.');
+}
+
+uploadImagesToDB().catch(console.error);
