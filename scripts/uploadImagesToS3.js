@@ -1,17 +1,20 @@
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 const AWS = require('aws-sdk');
 const fs = require('fs');
-const path = require('path');
 const { v4: uuidv4 } = require('uuid');
+
+
 
 // Configura las credenciales y la región de AWS
 AWS.config.update({
-    accessKeyId: 'AKIAVWKDZK4OYSTDSE4C',
-    secretAccessKey: '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',
-    region: 'sa-east-1'
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  region: process.env.AWS_REGION
 });
 
 const s3 = new AWS.S3();
-const imagesFolderPath = path.join(__dirname, '..', 'src', 'images', 'batch 1');
+const imagesFolderPath = path.join(__dirname, '..', 'src', 'images', 'batch 3');
 
 const getFilesRecursively = (directory) => {
   let filesInDirectory = fs.readdirSync(directory);
@@ -41,7 +44,7 @@ const uploadFileToS3 = async (filePath) => {
   } // Agrega más condiciones si necesitas soportar otros tipos de imagen
   
   const parts = filePath.split(path.sep);
-  const batchIndex = parts.indexOf('batch 1');
+  const batchIndex = parts.indexOf('batch 3');
   const niche = parts[batchIndex + 1];
 
   const params = {
