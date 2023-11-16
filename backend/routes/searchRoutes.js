@@ -1,20 +1,17 @@
 const express = require('express');
-const router = new express.Router();
-const { processUserQuery } = require('../util/openAIHelper'); // Importar la función processUserQuery
+const { processUserQuery } = require('../util/openAIHelper');
+const router = express.Router();
 
-router.post('/', async (req, res) => {
+router.post('/', async (req, res, next) => {
   try {
-    const userQuery = req.body.query;
-    const userId = req.body.userId;
-
-    // Obtener las imágenes y prompts creativos usando processUserQuery
-    const { images, creativePrompts } = await processUserQuery(userQuery, userId);
-
-    res.status(200).json({ success: true, images, creativePrompts });
+    const { query, userId } = req.body;
+    const result = await processUserQuery(query, userId);
+    res.json(result);
   } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ success: false, message: 'Internal Server Error' });
+    console.error('Error en searchRoutes:', error);
+    next(error);
   }
 });
 
 module.exports = router;
+

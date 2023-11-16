@@ -9,13 +9,18 @@ const ImageSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  niche: {  // Aquí agregamos el nuevo campo para el nicho
+  niche: {
     type: String,
     required: true
+  },
+  // Nuevo campo para almacenar el embedding vectorial
+  embedding: {
+    type: [Number], // Array de números para el vector de embedding
+    required: false // No es requerido por si las imágenes ya existentes no tienen embedding
   }
 });
 
-// Agregamos un índice de texto a la descripción y al nicho
+// Mantenemos el índice de texto actual
 ImageSchema.index({ description: 'text', niche: 'text' });
 
 const Image = mongoose.model('Image', ImageSchema);

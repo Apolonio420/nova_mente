@@ -33,14 +33,16 @@ const TShirt3D = ({ images }) => {
   const spaceMesh = new Mesh(spaceGeometry, spaceMaterial);
 
   useEffect(() => {
+    // Define una imagen predeterminada para usar en caso de que no haya imágenes disponibles
     const defaultImage = '/dog1.png';
-    // Elimina el uso de encodeURI si las URLs ya están codificadas en la base de datos
-    const imageToLoad = images.length > 0 ? images[0].url : defaultImage;
+    // Si hay imágenes disponibles, usa la URL de la primera imagen, de lo contrario usa la imagen predeterminada
+    const imageToLoad = (Array.isArray(images) && images.length > 0) ? images[0].url : defaultImage;
   
     const objLoader = new OBJLoader();
     const mtlLoader = new MTLLoader();
     const textureLoader = new THREE.TextureLoader();
   
+    // Carga la textura de la imagen
     textureLoader.load(imageToLoad, (texture) => {
       console.log('Imagen cargada con éxito:', imageToLoad);
       console.log('Texture Object:', texture);
