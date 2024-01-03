@@ -29,15 +29,33 @@ app.use('/api/test', testRoutes);
 // ID del asistente desde .env
 const assistantId = process.env.ASSISTANT_ID;
 
+const { runAssistant, generateImageWithDalle } = require('./util/openAIHelper');
 // Endpoint para optimizar prompts
-app.post('/api/optimize-prompt', async (req, res) => {
+app.post('/api/optimize-and-generate', async (req, res) => {
   const userPrompt = req.body.prompt;
   try {
-    const responses = await openAIHelper.runAssistant(assistantId, userPrompt);
-    res.json({ responses });
+    // Primero, obtener el prompt optimizado del asistente
+    const optimizedPrompts = await runAssistant(process.env.ASSISTANT_ID, userPrompt);
+    const optimizedPrompt = optimizedPrompts[0]; // Suponiendo que usamos la primera respuesta
+
+    // Luego, generar la imagen con DALL-E usando el prompt optimizado
+    const imageUrl = await generateImageWithDalle(optimizedPrompt);
+    
+    res.json({ imageUrl });
   } catch (error) {
-    console.error("Error al optimizar el prompt:", error);
-    res.status(500).send("Error al procesar el prompt.");
+    console.error("Error en la optimización y generación de imagen:", error);
+    res.status(500).send("Error en el proceso.");
+  }
+});
+
+app.post('/api/generate-image', async (req, res) => {
+  const prompt = req.body.prompt;
+  try {
+    const imageUrl = await openAIHelper.generateImageWithDalle(prompt);
+    res.json({ imageUrl });
+  } catch (error) {
+    console.error("Error al generar imagen con DALL-E:", error);
+    res.status(500).send("Error al generar imagen.");
   }
 });
 

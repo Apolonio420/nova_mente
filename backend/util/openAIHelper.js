@@ -1,5 +1,6 @@
 const OpenAI = require('openai');
 require('dotenv').config({ path: '../../.env' });
+const fetch = require('node-fetch');
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -40,6 +41,32 @@ async function runAssistant(assistantId, userPrompt) {
     }
 }
 
+async function generateImageWithDalle(prompt) {
+  const apiKey = process.env.OPENAI_API_KEY; // Asegúrate de que la clave API esté en tu archivo .env
+  const headers = {
+      "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": 'application/json'
+  };
+
+  const body = JSON.stringify({
+      prompt: prompt,
+      n: 1, // Número de imágenes a generar
+      size: "1024x1024"
+  });
+
+  try {
+      const response = await fetch("https://api.openai.com/v1/images/generations", { method: "POST", headers: headers, body: body });
+      const data = await response.json();
+
+      // Suponiendo que la respuesta incluye una URL o datos de imagen
+      return data.data[0].url; // Ajusta esto según el formato de respuesta de DALL-E
+  } catch (error) {
+      console.error("Error al generar imagen con DALL-E:", error);
+      throw error;
+  }
+}
+
 module.exports = {
-    runAssistant,
+  runAssistant,
+  generateImageWithDalle
 };

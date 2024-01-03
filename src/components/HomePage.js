@@ -9,16 +9,16 @@ function HomePage() {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    const route = `http://localhost:3001/api/search/generate-image-helped`;
-
+    const route = `http://localhost:3001/api/optimize-and-generate`;
+  
     try {
-      const response = await axios.post(route, { description, style });
+      const response = await axios.post(route, { prompt: description + " " + style });
       setGeneratedImageUrl(response.data.imageUrl);
     } catch (error) {
       console.error('Error al generar imagen:', error);
     }
   };
-
+  
   return (
     <div className="home-container">
       <header className="header">
