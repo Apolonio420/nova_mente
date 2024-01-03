@@ -1,17 +1,19 @@
 const express = require('express');
-const { processUserQuery } = require('../util/openAIHelper');
 const router = express.Router();
+const { optimizePromptForTShirt, generateImageFromPrompt } = require('../util/openAIHelper');
 
-router.post('/', async (req, res, next) => {
+router.post('/generate-image-helped', async (req, res) => {
   try {
-    const { query, userId } = req.body;
-    const result = await processUserQuery(query, userId);
-    res.json(result);
+    const { description, style } = req.body;
+    const optimizedPrompt = await optimizePromptForTShirt(description, style);
+    if (!optimizedPrompt) {
+      throw new Error('No se pudo optimizar el prompt');
+    }
+    const imageUrl = await generateImageFromPrompt(optimizedPrompt);
+    res.json({ imageUrl });
   } catch (error) {
-    console.error('Error en searchRoutes:', error);
-    next(error);
+    res.status(500).json({ error: error.message });
   }
 });
 
 module.exports = router;
-

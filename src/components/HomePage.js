@@ -1,47 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import TShirt3D from './TShirt3D';
 import './HomePage.css';
 
-const HomePage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [images, setImages] = useState([]);
+function HomePage() {
+  const [description, setDescription] = useState('');
+  const [style, setStyle] = useState('');
+  const [generatedImageUrl, setGeneratedImageUrl] = useState('');
 
-  useEffect(() => {
-    console.log('useEffect llamado, searchTerm:', searchTerm);
-    if (searchTerm) {
-      console.log('Enviando petición a /api/search');
-      axios.post('http://localhost:3001/api/search', { query: searchTerm })
-        .then(response => {
-          console.log('Respuesta del servidor:', response.data);
-          if (response.data.success) {
-            setImages(response.data.images);
-          }
-        })
-        .catch(error => {
-          console.error('Error al buscar imágenes:', error);
-        });
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    const route = `http://localhost:3001/api/search/generate-image-helped`;
+
+    try {
+      const response = await axios.post(route, { description, style });
+      setGeneratedImageUrl(response.data.imageUrl);
+    } catch (error) {
+      console.error('Error al generar imagen:', error);
     }
-  }, [searchTerm]);
+  };
 
   return (
-    <div className='homePage'>
-      <div className='topBar'>
-        {/* Aquí puedes añadir elementos a la barra superior, como un logo o menús */}
+    <div className="home-container">
+      <header className="header">
+        <img src="/path/to/your/logo.png" alt="Logo" className="logo" />
+        <h1>Novamente</h1>
+        <button className="auth-button">Login/Signup</button>
+      </header>
+
+      <div className="image-container">
+        {generatedImageUrl ? <img src={generatedImageUrl} alt="Imagen Generada" className="generated-image" /> : <div className="placeholder-image">Imagen aquí</div>}
       </div>
-      <div className='tshirtContainer'>
-        <TShirt3D images={images} />
-      </div>
-      <div className='searchBar'>
-        <input
-          type='text'
-          placeholder='Buscar remera...'
-          value={searchTerm}
-          onChange={e => setSearchTerm(e.target.value)}
-        />
-      </div>
+
+      <form onSubmit={handleSearch} className="search-form">
+        <textarea onChange={(e) => setDescription(e.target.value)} placeholder="Describe la imagen que quieres" className="search-input"></textarea>
+        <select onChange={(e) => setStyle(e.target.value)}>
+          <option value="">Selecciona un Estilo</option>
+          {/* Opciones de estilo aquí */}
+        </select>
+        <button type="submit" className="generate-button">Generar Imagen</button>
+      </form>
     </div>
   );
-};
+}
 
 export default HomePage;

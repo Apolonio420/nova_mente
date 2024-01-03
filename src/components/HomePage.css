@@ -1,43 +1,68 @@
-.homePage {
+.home-container {
   text-align: center;
-  position: relative;
-  background-color: #f2f2f2;
-  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f8;
 }
 
-.topBar {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-  background-color: #333;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #5a4b81;
+}
+
+.logo {
+  width: 50px;
+}
+
+.header h1 {
   color: white;
-  padding: 10px;
-  font-size: 24px;
+  font-size: 2em;
 }
 
-.tshirtContainer {
-  height: 50vh; /* Ajustado de 80vh a 50vh */
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.auth-button {
+  background-color: #4e4273;
+  color: white;
+  padding: 10px 20px;
+  border: none;
   border-radius: 10px;
-  overflow: hidden;
-  position: relative;
+  cursor: pointer;
 }
 
-.searchBar {
-  width: 100%;
+.search-form {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
-.searchBar input {
-  padding: 10px;
-  width: 80%;
+.search-input {
+  width: 40%; /* Ajuste del tamaño del buscador */
+  margin-right: 10px;
+}
+
+.style-selector, .parameter-selector {
+  margin-right: 10px;
+}
+
+.generate-button {
+  background-color: #5a4b81;
+  color: white;
+  padding: 10px 20px;
   border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image-container {
+  margin-top: 20px;
+  max-width: 450px; /* Ajustar según necesidad */
+  text-align: center; /* Centrar la imagen */
+  margin: auto;
+}
+
+.generated-image {
+  width: 100%;
   border-radius: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 18px;
 }

@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+elasticsearch-8.11.1/
 
 # testing
 /coverage

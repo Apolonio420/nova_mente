@@ -1,54 +1,62 @@
-const connectDB = require('./connectMongo');
-const fs = require('fs');
-const axios = require('axios');
+require('dotenv').config({ path: require('path').resolve(__dirname, '../../.env') });
+const mongoose = require('mongoose');
 const Image = require('../models/Image');
+const connectDB = require('./connectMongo');
+connectDB();
+const { CohereClient } = require('cohere-ai');
+const fs = require('fs');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '..', '..', '.env') });
 
+if (!process.env.COHERE_API_KEY) {
+    console.error('La clave API de Cohere no está definida. Por favor, verifica tu archivo .env');
+    process.exit(1);
+}
 
-// Función para obtener el embedding de OpenAI
-async function getEmbeddingForDescription(description) {
+const cohere = new CohereClient({ token: process.env.COHERE_API_KEY });
+const imagesData = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'imagenes.json'), 'utf8'));
+
+async function getEmbeddings(description) {
   try {
-    const response = await axios.post('https://api.openai.com/v1/embeddings', {
-      model: "text-embedding-ada-002", // Utilizamos el modelo adecuado
-      input: description
-    }, {
-      headers: {
-        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-        'Content-Type': 'application/json'
-      }
-    });
+      const response = await cohere.embed({ texts: [description] });
+      
+      // Registrar toda la respuesta para depurar
+      console.log("Respuesta completa de Cohere:", JSON.stringify(response, null, 2));
 
-    // Aquí asumimos que la respuesta contiene un array con los embeddings y tomamos el primero
-    return response.data.data[0].embedding; 
-  } catch (error) {
-    console.error('Error al obtener el embedding:', error);
-    throw error;
+      if (response.body && response.body.embeddings && response.body.embeddings.length > 0) {
+        return response.body.embeddings[0];
+    } else {
+        console.error("No se pudo obtener el embedding para la imagen:", response);
+        return null;
+    }
+    
+  } catch (err) {
+      console.error("Error al obtener embeddings:", err);
+      return null;
   }
 }
 
-async function uploadImagesToDB() {
-  await connectDB();
 
-  const jsonPath = path.join(__dirname, 'imagenes.json');
-  const data = fs.readFileSync(jsonPath, 'utf8');
-  const images = JSON.parse(data);
+async function uploadImages() {
+    for (let image of imagesData) {
+        console.log(`Procesando descripción: ${image.description}`);
+        const embedding = await getEmbeddings(image.description);
+        if (embedding) {
+            const newImage = new Image({
+                url: image.url,
+                description: image.description,
+                embedding: embedding
+            });
 
-  for (const image of images) {
-    // Obtener el embedding para la descripción de la imagen
-    const embedding = await getEmbeddingForDescription(image.description);
-
-    const newImage = new Image({
-      imageUrl: image.imageUrl,
-      description: image.description,
-      niche: image.niche,
-      embedding: embedding // Añadimos el embedding al documento
-    });
-
-    await newImage.save();
-  }
-
-  console.log('Todas las imágenes se han guardado exitosamente en la base de datos con sus embeddings.');
+            try {
+                await newImage.save();
+                console.log(`Imagen guardada en la base de datos: ${image.url}`);
+            } catch (err) {
+                console.error(`Error al guardar la imagen en la base de datos: ${err}`);
+            }
+        } else {
+            console.error(`No se pudo obtener el embedding para la imagen: ${image.url}`);
+        }
+    }
 }
 
-uploadImagesToDB().catch(console.error);
+uploadImages();

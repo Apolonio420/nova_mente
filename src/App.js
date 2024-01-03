@@ -1,19 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./components/HomePage"; // Asegúrate de que el path sea correcto
+import StorePage from "./components/StorePage"; // Asegúrate de que el path sea correcto
+import ProductPage from "./components/ProductPage"; // Asegúrate de que el path sea correcto
 import "./App.css"; // Importamos el CSS
-
-import HomePage from "./components/HomePage";
-import StorePage from "./components/StorePage";
-import ProductPage from "./components/ProductPage";
 
 function App() {
   return (
     <Router>
       <div>
-        {/* Barra de navegación */}
-        <nav className="navbar">
+        {/* Barra de navegación comentada para eliminarla */}
+        {/* <nav className="navbar">
           <div className="logo">
-            {/* Aquí puedes poner un logo */}
             <Link to="/">Logo</Link>
           </div>
           <div className="nav-links">
@@ -29,7 +27,7 @@ function App() {
               </li>
             </ul>
           </div>
-        </nav>
+        </nav> */}
 
         <Routes>
           <Route path="/" element={<HomePage />} />
