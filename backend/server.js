@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const searchRoutes = require('./routes/searchRoutes');
 const testRoutes = require('./routes/testRoutes');
 const openAIHelper = require('./util/openAIHelper');
+const removeBackgroundFromImage = require('./util/backgroundRemover'); // Importa el módulo de eliminación de fondo
 
 const app = express();
 
@@ -30,21 +31,22 @@ app.use('/api/test', testRoutes);
 const assistantId = process.env.ASSISTANT_ID;
 
 const { runAssistant, generateImageWithDalle } = require('./util/openAIHelper');
+
 // Endpoint para optimizar prompts y generar imágenes
 app.post('/api/optimize-and-generate', async (req, res) => {
   const { prompt } = req.body;
   
-  console.log("Recibido en el backend:", prompt); // Mostrar el prompt recibido
+  console.log("Recibido en el backend:", prompt);
 
   try {
     const optimizedPrompts = await runAssistant(assistantId, prompt);
     const optimizedPrompt = optimizedPrompts[0];
 
-    console.log("Prompt optimizado:", optimizedPrompt); // Mostrar el prompt optimizado
+    console.log("Prompt optimizado:", optimizedPrompt);
 
     const imageUrl = await generateImageWithDalle(optimizedPrompt);
 
-    console.log("URL de la imagen:", imageUrl); // Mostrar la URL de la imagen generada
+    console.log("URL de la imagen:", imageUrl);
 
     res.json({ imageUrl });
   } catch (error) {
@@ -52,8 +54,6 @@ app.post('/api/optimize-and-generate', async (req, res) => {
     res.status(500).send("Error en el proceso.");
   }
 });
-
-
 
 app.post('/api/generate-image', async (req, res) => {
   const prompt = req.body.prompt;
@@ -63,6 +63,18 @@ app.post('/api/generate-image', async (req, res) => {
   } catch (error) {
     console.error("Error al generar imagen con DALL-E:", error);
     res.status(500).send("Error al generar imagen.");
+  }
+});
+
+// Nuevo endpoint para eliminar el fondo de la imagen
+app.post('/api/remove-background', async (req, res) => {
+  const { imageUrl } = req.body;
+  try {
+    const imageWithoutBg = await removeBackgroundFromImage(imageUrl);
+    res.json({ image: imageWithoutBg });
+  } catch (error) {
+    console.error("Error al eliminar el fondo:", error);
+    res.status(500).send("Error al eliminar el fondo.");
   }
 });
 
