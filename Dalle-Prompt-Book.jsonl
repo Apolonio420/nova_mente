@@ -1,0 +1,2497 @@
+{"texto":"Brought to you by…"}
+{"texto":""}
+{"texto":"Version 1.0"}
+{"texto":""}
+{"texto":"dallery.gallery"}
+{"texto":""}
+{"texto":"July 13, 2022"}
+{"texto":""}
+{"texto":"\fNothing you are about to see"}
+{"texto":"is real. For real."}
+{"texto":"The following document contains:"}
+{"texto":""}
+{"texto":"⚠️"}
+{"texto":"⚠️"}
+{"texto":"⚠️"}
+{"texto":""}
+{"texto":"photos that are not real photos"}
+{"texto":"paintings that are not real paintings, and"}
+{"texto":"people, places and things that do not exist."}
+{"texto":""}
+{"texto":"The images you are about to see were all created by an AI tool called DALL·E 2."}
+{"texto":""}
+{"texto":"All images are © Open AI."}
+{"texto":""}
+{"texto":"3D render, cute robot holding up a warning sign, shallow depth of field"}
+{"texto":""}
+{"texto":"\fTable of contents"}
+{"texto":"Introduction"}
+{"texto":""}
+{"texto":"3. Illustration"}
+{"texto":""}
+{"texto":"6. DALL·E techniques"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Preface"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Monochrome styles"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Prompt design"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Analog media, colour"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Fixing details"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Digital media, colour​"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Replacing subjects"}
+{"texto":""}
+{"texto":"1. Vibes"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Instructional illustration"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Replacing backgrounds"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Moods and feelings"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"3D + textured illustrations"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Size, structure, shape"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Character + cartoon"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Simple uncropping"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Looks + aesthetics"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Animation-related prompts"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Creative uncropping"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Illustrator-based prompts​"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Infinite zoom-outs"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Context jumping"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Landscape + portrait images"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Panoramas"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Murals"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Combining images (one-shot)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Combining images (wide)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Variations"}
+{"texto":""}
+{"texto":"2. Photography"}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Photo prompt structure"}
+{"texto":""}
+{"texto":"4. Art history"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Framing, proximity"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Ancient - Medieval"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Camera position, angle"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Renaissance - Modern"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Focus, speed, settings"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Modern & contemporary"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Lighting (outdoor)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Artist prompt tests"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Lighting (indoor)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Film stocks, types &"}
+{"texto":""}
+{"texto":"5. 3D artwork"}
+{"texto":""}
+{"texto":"processes"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Sculpture materials"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Film & TV show prompts"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Items for bodies"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Photographer prompt tests"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Places and spaces"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Contexts & use cases"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Paper & textiles"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Final photography tips"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Ceramics & glass"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Photographing the work"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"In-app edits"}
+{"texto":""}
+{"texto":"With an outside app"}
+{"texto":""}
+{"texto":"7. Showcase"}
+{"texto":"​"}
+{"texto":"8. Appendix"}
+{"texto":"a. Thanks + acknowledgements"}
+{"texto":"b. Articles + videos"}
+{"texto":"c. Resources + tools"}
+{"texto":""}
+{"texto":"Cyberwave vaporpunk art of a kneeling figure, looking up at a glowing neon book icon, smoke and mist, pink and blue lighting,"}
+{"texto":"cybernetic sci-fi render"}
+{"texto":""}
+{"texto":"\fPreface"}
+{"texto":"Digital art of a man looking upwards, eyes wide in"}
+{"texto":""}
+{"texto":"DALL·E 2 is a game-changing new tool for AI"}
+{"texto":"powered art creation, turning sentences into"}
+{"texto":"beautiful pictures in seconds. Like magic."}
+{"texto":""}
+{"texto":"wonder, awestruck, in the style of Pixar, Up,"}
+{"texto":"character, white background"}
+{"texto":""}
+{"texto":"This book is designed as a free, visual resource to inspire your"}
+{"texto":"own creative DALL·E projects, with a particular emphasis on"}
+{"texto":"crafting original prompts in natural language."}
+{"texto":""}
+{"texto":"This document was created by Guy Parsons and is published"}
+{"texto":"by the AI art website, the DALL·Ery GALL·Ery"}
+{"texto":""}
+{"texto":"For more, subscribe to the DALL·Ery SUMM-Ary newsletter,"}
+{"texto":"subscribe on Instagram, follow me on Twitter, and check out the"}
+{"texto":"website."}
+{"texto":""}
+{"texto":"This is an unofficial document, not affiliated with OpenAI."}
+{"texto":""}
+{"texto":"All images within were generated by DALL·E 2 and remain © OpenAI."}
+{"texto":""}
+{"texto":"In order to accelerate the compilation of this document, some examples"}
+{"texto":"have been taken from Reddit, social media and other sources, with credit"}
+{"texto":"to the prompter."}
+{"texto":""}
+{"texto":"\f\fH O LY F * * * W E"}
+{"texto":"ARE LIVING IN"}
+{"texto":"THE FUTURE"}
+{"texto":""}
+{"texto":"\fA prompt is a"}
+{"texto":"sentence, 400"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"full body photo of a horse in a space suit."}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"A Charming Hedge Maze Dotted By Rose Bushes And"}
+{"texto":"Intricately Designed Lampposts, Digital Art, Trending On"}
+{"texto":"Artstation."}
+{"texto":""}
+{"texto":"characters or"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Kitten Is Eating A Piece Of Pizza. Pizza Slices Flying With"}
+{"texto":""}
+{"texto":"less, that"}
+{"texto":"describes the"}
+{"texto":"image you"}
+{"texto":"want."}
+{"texto":""}
+{"texto":"A Grey Kitten Standing On A Pizza In Outer Space. The"}
+{"texto":""}
+{"texto":"Angel Wings In Background, Dark Cyan Galaxy And Stars"}
+{"texto":"In Background, 4K Photoshopped Image, Look At That"}
+{"texto":"Detail."}
+{"texto":"•"}
+{"texto":""}
+{"texto":"A Portrait Of A Dog In A Library, Sigma 85Mm F/1.4"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"An Oil Painting Of A Young Boy With Long Blonde Hair"}
+{"texto":"Sleeping In Bed With A Checkered Comforter"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"A Male American High School Student Reading A"}
+{"texto":"Newspaper, In Chinese Watercolor, Award-Winning"}
+{"texto":"Painting"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Here are some"}
+{"texto":"random"}
+{"texto":"examples."}
+{"texto":""}
+{"texto":"A 3D Render Of A Teapot In The Shape Of A King With"}
+{"texto":"Red Hair, Realistic, Artstation, Cg"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Jackson Pollock, Air Jordan sneakers, digital art, product"}
+{"texto":"photography"}
+{"texto":""}
+{"texto":"Search for more on the unofficial DALL·E 2 search"}
+{"texto":"engine!​"}
+{"texto":""}
+{"texto":"\fPrompts can be very"}
+{"texto":"long – or very short!"}
+{"texto":""}
+{"texto":"Prompt: grainy abstract experimental expired film photo of a"}
+{"texto":"woman in red dress, talking angrily on mobile phone,"}
+{"texto":"gesticulating angrily, in 1960s New York City by Saul Leiter,"}
+{"texto":"50mm lens, cinematic colors, oversaturated filter, blur,"}
+{"texto":"reflection, refraction, distortion, rain drops, smears, smudges,"}
+{"texto":"blur, cinestill 800t"}
+{"texto":""}
+{"texto":"Prompt:"}
+{"texto":""}
+{"texto":"🌈🚀🤩"}
+{"texto":""}
+{"texto":", octane 3D render"}
+{"texto":""}
+{"texto":"\fDALL·E has not explicitly been 'taught' anything, like"}
+{"texto":"who Frida Kahlo is, or what a llama looks like, or what"}
+{"texto":"a wide-angle lens does."}
+{"texto":""}
+{"texto":"It has just studied 650 million images & captions, and"}
+{"texto":"left to draw its own conclusions."}
+{"texto":""}
+{"texto":"That's why there can't be a regular 'manual', based on"}
+{"texto":"functionality that the developers intentionally"}
+{"texto":"programmed in – even the creators of DALL·E cannot"}
+{"texto":"be sure what DALL·E has or hasn't 'learned', or what it"}
+{"texto":"thinks different phrases mean."}
+{"texto":""}
+{"texto":"Instead, we have to 'discover' what DALL·E is capable"}
+{"texto":"of, and how it reacts. This document is a start!"}
+{"texto":""}
+{"texto":"\fPrompt"}
+{"texto":""}
+{"texto":"Sometimes, less is more. Prompts can't be more than 400"}
+{"texto":""}
+{"texto":"design"}
+{"texto":""}
+{"texto":"just a few emojis! But if you have a specific outcome in mind,"}
+{"texto":""}
+{"texto":"characters, in any case. And you can get amazing results from"}
+{"texto":""}
+{"texto":"then being specific in your prompt will help."}
+{"texto":""}
+{"texto":"A simple adjective, like 'action photography', already embodies"}
+{"texto":"a lot of characteristics (about shutter speed, framing, lens"}
+{"texto":"choices, etc) that you might otherwise define separately."}
+{"texto":""}
+{"texto":"There are 'fingers-crossed' prompt phrases, like AI-era prayers,"}
+{"texto":"hoped to mean 'make it really good!', such as 4k, 8k, highquality, trending, award-winning, acclaimed, on artstation, etc."}
+{"texto":"However, the precise impact of these has not been rigorously"}
+{"texto":"tested. But feel free to add them!"}
+{"texto":""}
+{"texto":"In text AI models, simple prompt tweaks have created huge"}
+{"texto":"boosts in performance: for instance, when a text generator is"}
+{"texto":"made to answer a math puzzle, starting with the words 'Let's"}
+{"texto":"think things through step-by-step' makes it 4x more likely to get"}
+{"texto":"the right answer."}
+{"texto":""}
+{"texto":"So no doubt, there are similar DALL·E hacks yet to be found…"}
+{"texto":""}
+{"texto":"Digital art of portrait of a woman, holding pencil, inspired, head-and-shoulders shot, white background, cute Pixar"}
+{"texto":"character"}
+{"texto":""}
+{"texto":"\fPrompt"}
+{"texto":"design"}
+{"texto":""}
+{"texto":"You can borrow some photographic prompt terminology"}
+{"texto":"(especially for framing) to apply to illustrations: e.g: 'close-up.'"}
+{"texto":""}
+{"texto":"If you are generating mockups of 3D art, you can also define"}
+{"texto":"​"}
+{"texto":"how that piece is photographed!"}
+{"texto":""}
+{"texto":"Adjectives can easily influence multiple factors, e.g: 'art deco'"}
+{"texto":"will influence the illustration style, but also the clothing and"}
+{"texto":"materials of the subject, unless otherwise defined. Years,"}
+{"texto":"decades and eras, like '1924' or 'late-90s', can also have this"}
+{"texto":"effect."}
+{"texto":""}
+{"texto":"Even superficially specific prompts have more 'general' effects."}
+{"texto":"For instance, defining a camera or lens ('Sigma 75mm') doesn't"}
+{"texto":"just 'create that specific look', it more broadly alludes to 'the kind"}
+{"texto":"of photo where the lens/camera appears in the description',"}
+{"texto":"which tend to be professional and hence higher-quality."}
+{"texto":""}
+{"texto":"If a style is proving elusive, try 'doubling down' with related"}
+{"texto":"terms (artists, years, media, movement) years, e.g: rather than"}
+{"texto":"simply '…by Picasso', try '…Cubist painting by Pablo Picasso,"}
+{"texto":"1934, colourful, geometric work of Cubism, in the style of \"Two"}
+{"texto":"Girls Reading.\" Or try unbundling!)"}
+{"texto":""}
+{"texto":"\fDetailed prompts are great if you know exactly what you're"}
+{"texto":""}
+{"texto":"Prompt"}
+{"texto":""}
+{"texto":"looking for and are trying to get a specific effect."}
+{"texto":""}
+{"texto":"design"}
+{"texto":""}
+{"texto":"…but DALL·E also has a creative eye, and has studied over 400"}
+{"texto":"million images. So there is nothing wrong with being vague, and"}
+{"texto":"seeing what happens! You can also use variations to create"}
+{"texto":"further riffs of your favourite output. Sometimes you'll end up on"}
+{"texto":"quite a journey!"}
+{"texto":""}
+{"texto":"Putting together this document has been quite an undertaking,"}
+{"texto":"as it aims to cover all 16777216¹⁰⁴⁸⁵⁷⁶ possible DALL·E"}
+{"texto":""}
+{"texto":"images"}
+{"texto":""}
+{"texto":"(vs the 10⁸⁰ atoms in the universe) and all possible subjects of"}
+{"texto":"images, which is to say, all possible objects and materials in"}
+{"texto":"existence, depicted in all known methods."}
+{"texto":""}
+{"texto":"For 2D art, we've gone a little deeper, looking at particular art"}
+{"texto":"styles and art movements. But if you want to create images of"}
+{"texto":"buildings, for example, then learning more about architectural"}
+{"texto":"periods, famous architects, and names of architectural details"}
+{"texto":"will be helpful to create specific outputs. Same for candlesticks,"}
+{"texto":"cartoons or candy wrappers."}
+{"texto":""}
+{"texto":"DALL·E knows a lot about everything, so the deeper your"}
+{"texto":"knowledge of the requisite jargon, the more detailed the"}
+{"texto":"results."}
+{"texto":""}
+{"texto":"\f1—"}
+{"texto":""}
+{"texto":"general vibes"}
+{"texto":""}
+{"texto":"\fEmotional prompt words"}
+{"texto":"Positive mood, low energy"}
+{"texto":"light, peaceful, calm, serene,"}
+{"texto":""}
+{"texto":"😌"}
+{"texto":""}
+{"texto":"Positive mood, high energy"}
+{"texto":""}
+{"texto":"🤪"}
+{"texto":""}
+{"texto":"bright, vibrant, dynamic, spirited,"}
+{"texto":""}
+{"texto":"soothing, relaxed, placid,"}
+{"texto":""}
+{"texto":"vivid, lively, energetic, colorful,"}
+{"texto":""}
+{"texto":"comforting, cosy, tranquil, quiet,"}
+{"texto":""}
+{"texto":"joyful, romantic, expressive,"}
+{"texto":""}
+{"texto":"pastel, delicate, graceful, subtle,"}
+{"texto":""}
+{"texto":"bright, rich, kaleidoscopic,"}
+{"texto":""}
+{"texto":"balmy, mild, ethereal, elegant,"}
+{"texto":""}
+{"texto":"psychedelic, saturated, ecstatic,"}
+{"texto":""}
+{"texto":"tender, soft, light"}
+{"texto":""}
+{"texto":"brash, exciting, passionate, hot"}
+{"texto":""}
+{"texto":"Negative mood, low energy"}
+{"texto":""}
+{"texto":"😢"}
+{"texto":""}
+{"texto":"Negative mood, high energy"}
+{"texto":""}
+{"texto":"😱"}
+{"texto":""}
+{"texto":"muted, bleak, funereal, somber,"}
+{"texto":""}
+{"texto":"dark, ominous, threatening,"}
+{"texto":""}
+{"texto":"melancholic, mournful, gloomy,"}
+{"texto":""}
+{"texto":"haunting, forbidding, gloomy,"}
+{"texto":""}
+{"texto":"dismal, sad, pale, washed-out,"}
+{"texto":""}
+{"texto":"stormy, doom, apocalyptic,"}
+{"texto":""}
+{"texto":"desaturated, grey, subdued, dull,"}
+{"texto":""}
+{"texto":"sinister, shadowy, ghostly,"}
+{"texto":""}
+{"texto":"dreary, depressing, weary, tired"}
+{"texto":""}
+{"texto":"unnerving, harrowing, dreadful,"}
+{"texto":"frightful, shocking, terror,"}
+{"texto":"hideous, ghastly, terrifying"}
+{"texto":""}
+{"texto":"\fSize-y, structure-y words"}
+{"texto":"Big and free"}
+{"texto":""}
+{"texto":"Big and structured"}
+{"texto":""}
+{"texto":"Small and structured"}
+{"texto":""}
+{"texto":"Curvaceous, swirling, organic,"}
+{"texto":""}
+{"texto":"Monumental, imposing, rigorous,"}
+{"texto":""}
+{"texto":"Ornate, delicate, neat, precise,"}
+{"texto":""}
+{"texto":"Unplanned, daring, brash,"}
+{"texto":""}
+{"texto":"riotous, turbulent, flowing,"}
+{"texto":""}
+{"texto":"geometric, ordered, angular,"}
+{"texto":""}
+{"texto":"detailed, opulent, lavish, elegant,"}
+{"texto":""}
+{"texto":"random, casual, sketched,"}
+{"texto":""}
+{"texto":"amorphous, natural, distorted,"}
+{"texto":""}
+{"texto":"artificial, lines, straight, rhythmic,"}
+{"texto":""}
+{"texto":"ornamented, fine, elaborate,"}
+{"texto":""}
+{"texto":"playful, spontaneous,"}
+{"texto":""}
+{"texto":"uneven, random, lush, organic,"}
+{"texto":""}
+{"texto":"composed, unified, manmade,"}
+{"texto":""}
+{"texto":"accurate, intricate, meticulous,"}
+{"texto":""}
+{"texto":"extemporaneous, offhand,"}
+{"texto":""}
+{"texto":"bold, intuitive, emotive, chaotic,"}
+{"texto":""}
+{"texto":"perspective, minimalist, blocks,"}
+{"texto":""}
+{"texto":"decorative, realistic"}
+{"texto":""}
+{"texto":"improvisational, experimental,"}
+{"texto":""}
+{"texto":"tumultuous, earthy, churning"}
+{"texto":""}
+{"texto":"dignified, robust, defined"}
+{"texto":""}
+{"texto":"Small and free"}
+{"texto":""}
+{"texto":"loose, jaunty, light, expressive"}
+{"texto":""}
+{"texto":"\f🤩"}
+{"texto":""}
+{"texto":"Looks, vibes, -punks, -waves"}
+{"texto":""}
+{"texto":"Check out this huge list!"}
+{"texto":""}
+{"texto":"Vaporwave: neon, pink, blue,"}
+{"texto":""}
+{"texto":"Post-apocalyptic: grey, desolate,"}
+{"texto":""}
+{"texto":"Gothic, fantasy: stone, dark, lush,"}
+{"texto":""}
+{"texto":"Cybernetic, sci-fi: glows,"}
+{"texto":""}
+{"texto":"Steampunk: gold, copper, brass,"}
+{"texto":""}
+{"texto":"geometric, futuristic, '80s."}
+{"texto":""}
+{"texto":"stormy, fire, decay"}
+{"texto":""}
+{"texto":"nature, mist, mystery, angular"}
+{"texto":""}
+{"texto":"greens, metals, armor, chrome"}
+{"texto":""}
+{"texto":"Victoriana,"}
+{"texto":""}
+{"texto":"Memphis, Memphis Group, 1980s,"}
+{"texto":""}
+{"texto":"Dieselpunk, grimy, steel, oil, '50s,"}
+{"texto":""}
+{"texto":"Afrofuturism: futuristic, and"}
+{"texto":""}
+{"texto":"Cyberpunk, 1990s, dyed hair,"}
+{"texto":""}
+{"texto":"Biopunk, organic: greens,"}
+{"texto":""}
+{"texto":"bold, kitch, colourful, shapes"}
+{"texto":""}
+{"texto":"mechanised, punk cousin of steampnk"}
+{"texto":""}
+{"texto":"African!"}
+{"texto":""}
+{"texto":"spiky, graphic elements ."}
+{"texto":""}
+{"texto":"slimes, plants, futuristic, weird"}
+{"texto":""}
+{"texto":"\f2—"}
+{"texto":""}
+{"texto":"photography"}
+{"texto":""}
+{"texto":"\fThinking about"}
+{"texto":"photography"}
+{"texto":""}
+{"texto":"How is the photo composed?"}
+{"texto":"What is the emotional vibe of the image?"}
+{"texto":"How close are we to the subject? What angle?"}
+{"texto":"How much depth of field?"}
+{"texto":"How is the subject lit? Where from? How much light?"}
+{"texto":""}
+{"texto":"prompts"}
+{"texto":""}
+{"texto":"Artificial or natural light? What colour? What time of day?"}
+{"texto":"What camera or lens? Macro, telephoto or wide angle?"}
+{"texto":"Where is it shot? in the studio or out in the world?"}
+{"texto":"What film or process is used? Digital or film?"}
+{"texto":"What year was it taken?"}
+{"texto":"In what context was this photo ultimately published or used?"}
+{"texto":""}
+{"texto":"framing"}
+{"texto":""}
+{"texto":"film type"}
+{"texto":""}
+{"texto":"shoot context"}
+{"texto":""}
+{"texto":"A close-up, black & white studio photographic portrait of SUBJECT,"}
+{"texto":"dramatic backlighting, 1973 photo from Life Magazine"}
+{"texto":""}
+{"texto":"year & usage context"}
+{"texto":""}
+{"texto":"lighting prompt"}
+{"texto":""}
+{"texto":"vibe prompt"}
+{"texto":""}
+{"texto":"framing"}
+{"texto":""}
+{"texto":"shoot context"}
+{"texto":""}
+{"texto":"lighting prompt"}
+{"texto":""}
+{"texto":"A vibrant photograph of SUBJECT, wide shot, outdoors, sunset photo at"}
+{"texto":"golden hour, wide-angle lens, soft focus, shot on iPhone 6, on Flickr in 2007"}
+{"texto":"lens & camera prompt"}
+{"texto":""}
+{"texto":"year & usage context"}
+{"texto":""}
+{"texto":"\fCamera angles: proximity"}
+{"texto":"DALL·E interprets these pretty loosely, and often provides candidate from the 'neighbour' framing, e.g: a close-up prompt might get extreme close-ups and medium shots in the mix."}
+{"texto":""}
+{"texto":"Extreme close-up"}
+{"texto":""}
+{"texto":"Close-up"}
+{"texto":""}
+{"texto":"Medium shot, mid-shot, waist shot"}
+{"texto":""}
+{"texto":"Long shot, wide shot, full shot"}
+{"texto":""}
+{"texto":"Extreme long shot, extreme wide"}
+{"texto":""}
+{"texto":"(depicts subject from waist up)"}
+{"texto":""}
+{"texto":"(shows full subject + surroundings)"}
+{"texto":""}
+{"texto":"shot, X 'in the distance'"}
+{"texto":""}
+{"texto":"Film still of a cackling man, bushy"}
+{"texto":""}
+{"texto":"A close-up of a woman’s face,"}
+{"texto":""}
+{"texto":"Film still of an elderly black man"}
+{"texto":""}
+{"texto":"Film still of a woman drinking"}
+{"texto":""}
+{"texto":"Film still, extreme wide shot of an"}
+{"texto":""}
+{"texto":"moustache, extreme close-up shot"}
+{"texto":""}
+{"texto":"captured in low light with a soft"}
+{"texto":""}
+{"texto":"playing chess, medium shot, mid-"}
+{"texto":""}
+{"texto":"coffee, walking to work, long shot,"}
+{"texto":""}
+{"texto":"elephant alone on the savannah,"}
+{"texto":""}
+{"texto":"focus. There is a gentle pink hue"}
+{"texto":""}
+{"texto":"shot"}
+{"texto":""}
+{"texto":"wide shot, full shot"}
+{"texto":""}
+{"texto":"extreme long shot​"}
+{"texto":""}
+{"texto":"to the image, and the woman’s"}
+{"texto":"features are lightly blurred."}
+{"texto":"Cinestill 800t. (Source.)"}
+{"texto":""}
+{"texto":"Also try 'head & shoulders shot'"}
+{"texto":""}
+{"texto":"\fCamera angles: position"}
+{"texto":""}
+{"texto":"Overhead view, establishing shot,"}
+{"texto":""}
+{"texto":"Low angle, from below,"}
+{"texto":""}
+{"texto":"Aerial view, birds eye view,"}
+{"texto":""}
+{"texto":"Tilted frame, dutch angle,"}
+{"texto":""}
+{"texto":"Over-the-shoulder shot"}
+{"texto":""}
+{"texto":"from above, high angle, crane shot"}
+{"texto":""}
+{"texto":"worms-eye-view"}
+{"texto":""}
+{"texto":"drone photography"}
+{"texto":""}
+{"texto":"skewed shot"}
+{"texto":""}
+{"texto":"Film still, establishing shot of"}
+{"texto":""}
+{"texto":"Film still, gangster squirrel"}
+{"texto":""}
+{"texto":"Aerial photo of a coral reef that"}
+{"texto":""}
+{"texto":"Film still of stylish girl dancing on"}
+{"texto":""}
+{"texto":"Film still, over-the-shoulder shot of"}
+{"texto":""}
+{"texto":"bustling farmers market, golden"}
+{"texto":""}
+{"texto":"counting his money, low angle,"}
+{"texto":""}
+{"texto":"looks like a labyrinth."}
+{"texto":""}
+{"texto":"school desk, tilted frame, 35°,"}
+{"texto":""}
+{"texto":"two pirates having an angry"}
+{"texto":""}
+{"texto":"hour, high angle​"}
+{"texto":""}
+{"texto":"shot from below, worms eye view"}
+{"texto":""}
+{"texto":"Dutch angle, cinematography from"}
+{"texto":""}
+{"texto":"discussion, eyepatch, from"}
+{"texto":""}
+{"texto":"music video"}
+{"texto":""}
+{"texto":"adventure movie 'SHIVER ME"}
+{"texto":"TIMBERS' (1999)"}
+{"texto":""}
+{"texto":"When applying a pattern, try experimenting with perspective to get a more intriguing, less \"flat\" feel"}
+{"texto":""}
+{"texto":"\fCamera settings + lenses"}
+{"texto":""}
+{"texto":"Fast shutter speed, high speed,"}
+{"texto":""}
+{"texto":"Slow shutter speed, 1 sec shutter,"}
+{"texto":""}
+{"texto":"Bokeh, shallow depth of field,"}
+{"texto":""}
+{"texto":"Tilt shift photography (via)"}
+{"texto":""}
+{"texto":"Motion blur"}
+{"texto":""}
+{"texto":"action photo, 1/1000 sec shutter"}
+{"texto":""}
+{"texto":"long exposure"}
+{"texto":""}
+{"texto":"blur, out-of-focus background (via)"}
+{"texto":""}
+{"texto":"Makes a narrow strip in-focus"}
+{"texto":""}
+{"texto":"(Source)"}
+{"texto":""}
+{"texto":"Telephoto lens, Sigma 500mm f/5"}
+{"texto":""}
+{"texto":"Macro lens, macro photo (source)"}
+{"texto":""}
+{"texto":"Wide angle lens, 15mm (source)"}
+{"texto":""}
+{"texto":"Fish-eye lens: distorts the scene,"}
+{"texto":""}
+{"texto":"Deep depth of field, f/22, 35mm"}
+{"texto":""}
+{"texto":"Shot from afar, feels 'voyeuristic'"}
+{"texto":""}
+{"texto":"Sigma 105mm F2.8 - for small scenes"}
+{"texto":""}
+{"texto":"Fits more of the scene in the frame"}
+{"texto":""}
+{"texto":"vv. wide angle, the centre 'bulges'"}
+{"texto":""}
+{"texto":"Make all elements sharp"}
+{"texto":""}
+{"texto":"\fLighting prompts: natural + outdoor"}
+{"texto":""}
+{"texto":"Golden hour, dusk, sunset,"}
+{"texto":""}
+{"texto":"Blue hour, twilight, cool,"}
+{"texto":""}
+{"texto":"Midday, harsh overhead sunlight,"}
+{"texto":""}
+{"texto":"sunrise - warm lighting, strong"}
+{"texto":""}
+{"texto":"ISO1200, slow shutter speed"}
+{"texto":""}
+{"texto":"directional sunlight"}
+{"texto":""}
+{"texto":"Overcast, flat lighting,"}
+{"texto":""}
+{"texto":"silhouette (vs illuminating your"}
+{"texto":"Photograph of a stylish black"}
+{"texto":""}
+{"texto":"shadows"}
+{"texto":""}
+{"texto":"Tactical use of shadow &"}
+{"texto":""}
+{"texto":"Photograph of a stylish black man"}
+{"texto":""}
+{"texto":"woman listening excitedly on"}
+{"texto":""}
+{"texto":"primary subject)"}
+{"texto":""}
+{"texto":"High-quality DSLR photo of cute"}
+{"texto":""}
+{"texto":"\"Blue hour\" photography, a fox"}
+{"texto":""}
+{"texto":"talking animatedly on phone, mid-"}
+{"texto":""}
+{"texto":"phone, mid-shot, outdoors in"}
+{"texto":""}
+{"texto":"A Latina businesswoman, sat"}
+{"texto":""}
+{"texto":"pig in a big blue hat in a"}
+{"texto":""}
+{"texto":"sitting on a bench, cool twilight"}
+{"texto":""}
+{"texto":"shot, outdoors in LA, harsh"}
+{"texto":""}
+{"texto":"Chicago, overcast flat lighting,"}
+{"texto":""}
+{"texto":"outdoors, mostly silhouetted in"}
+{"texto":""}
+{"texto":"Dickensian back street at dusk,"}
+{"texto":""}
+{"texto":"lighting, 5am."}
+{"texto":""}
+{"texto":"overheard sunlight, midday,"}
+{"texto":""}
+{"texto":"4pm, cloudy afternoon"}
+{"texto":""}
+{"texto":"soft shadow, harsh sunlight,"}
+{"texto":""}
+{"texto":"long shadows, beams of sunlight"}
+{"texto":""}
+{"texto":"summer"}
+{"texto":""}
+{"texto":"corporate plaza"}
+{"texto":""}
+{"texto":"\fLighting prompts, artificial / indoor"}
+{"texto":""}
+{"texto":"Warm lighting, 2700K,"}
+{"texto":""}
+{"texto":"Cold, fluorescent lighting, 4800K"}
+{"texto":""}
+{"texto":"Flash photography, harsh flash​"}
+{"texto":""}
+{"texto":"'Colourful lighting', defined colours"}
+{"texto":""}
+{"texto":"Defined 'real' light source (e.g:"}
+{"texto":""}
+{"texto":"(e.g: 'purple and yellow lighting')"}
+{"texto":""}
+{"texto":"police car lights, fireworks, etc)"}
+{"texto":""}
+{"texto":"High-key lighting, neutral, flat, even,"}
+{"texto":""}
+{"texto":"Low-key lighting, dramatic, single"}
+{"texto":""}
+{"texto":"Backlighting, backlit (source)"}
+{"texto":""}
+{"texto":"Studio lighting, professional lighting."}
+{"texto":""}
+{"texto":"Defined direction, lit from above,"}
+{"texto":""}
+{"texto":"corporate, professional, ambient"}
+{"texto":""}
+{"texto":"light source, high-contrast"}
+{"texto":""}
+{"texto":"Adds a 'glow' around subj. edge"}
+{"texto":""}
+{"texto":"studio portrait, well-lit, etc (source)"}
+{"texto":""}
+{"texto":"lit from below, side lighting, etc"}
+{"texto":""}
+{"texto":"\fCreative film types, stocks & processes"}
+{"texto":""}
+{"texto":"Kodachrome"}
+{"texto":""}
+{"texto":"Autochrome"}
+{"texto":""}
+{"texto":"Lomography"}
+{"texto":""}
+{"texto":"Polaroid, Instax (source)"}
+{"texto":""}
+{"texto":"Cameraphone, (year)"}
+{"texto":""}
+{"texto":"Strong reds and greens. (source)"}
+{"texto":""}
+{"texto":"Queasy yellow-greens + hot pinks."}
+{"texto":""}
+{"texto":"Oversaturated, hue-shifted images."}
+{"texto":""}
+{"texto":"Soft focus, square, and flash-y.​"}
+{"texto":""}
+{"texto":"Fuzzy, early digital photography"}
+{"texto":""}
+{"texto":"CCTV, surveillance, security"}
+{"texto":""}
+{"texto":"Disposable camera"}
+{"texto":""}
+{"texto":"Daguerrotype"}
+{"texto":""}
+{"texto":"Camera obscura, pinhole"}
+{"texto":""}
+{"texto":"Double exposure. Name two"}
+{"texto":""}
+{"texto":"footage, dashcam, black-and-white"}
+{"texto":""}
+{"texto":"Authentically amateur composition."}
+{"texto":""}
+{"texto":"Very early film stock, 1800s, vintage."}
+{"texto":""}
+{"texto":"photography."}
+{"texto":""}
+{"texto":"subjects to combine them both."}
+{"texto":""}
+{"texto":"\fCreative film types II"}
+{"texto":""}
+{"texto":"Cyanotype"}
+{"texto":""}
+{"texto":"Black and white, Tri-X 400TX"}
+{"texto":""}
+{"texto":"Redscale photography"}
+{"texto":""}
+{"texto":"Infrared photography"}
+{"texto":""}
+{"texto":"Bleach bypass"}
+{"texto":""}
+{"texto":"Blue-and-white photo printing method"}
+{"texto":""}
+{"texto":"Classic monochrome photography"}
+{"texto":""}
+{"texto":"Makes things red, then more red."}
+{"texto":""}
+{"texto":"Weird film that makes plants pink"}
+{"texto":""}
+{"texto":"Muted look from Saving P'vt Ryan."}
+{"texto":""}
+{"texto":"Instagram, Hipstamatic, 2015"}
+{"texto":""}
+{"texto":"Contact sheet"}
+{"texto":""}
+{"texto":"Colour splash"}
+{"texto":""}
+{"texto":"Solarised"}
+{"texto":""}
+{"texto":"Anaglyph"}
+{"texto":""}
+{"texto":"Faux-retro filtered Noughties look."}
+{"texto":""}
+{"texto":"Get multiple images!"}
+{"texto":""}
+{"texto":"One colour, and everything else B/W."}
+{"texto":""}
+{"texto":"Some colours/parts are 'negative'"}
+{"texto":""}
+{"texto":"3D photography format. (Source)"}
+{"texto":""}
+{"texto":"\fPrompt hack: film & TV prompts, 'Film still of…'"}
+{"texto":"You can name a specific film or TV show (ideally with the year in brackets) to 'steal the look', without needing to know the technical styles used."}
+{"texto":"You can also name non-existent media with genre + year prompts, e.g: 'from action-adventure film \"SHIVER ME TIMBERS!\"(1973)"}
+{"texto":"Note: this prompt will also influence the background, costumes, hairstyles, and any other uncontrolled factors!"}
+{"texto":""}
+{"texto":"A man in a Grim Reaper"}
+{"texto":""}
+{"texto":"A tall Black woman,"}
+{"texto":""}
+{"texto":"A pile of books on a bedside"}
+{"texto":""}
+{"texto":"Two construction workers"}
+{"texto":""}
+{"texto":"costume, from…"}
+{"texto":""}
+{"texto":"Kermit the Frog, from…"}
+{"texto":""}
+{"texto":"drinking red wine, from…"}
+{"texto":""}
+{"texto":"table, from…"}
+{"texto":""}
+{"texto":"arguing intently, from…"}
+{"texto":""}
+{"texto":"TV show Friends, Season 3 (1997)"}
+{"texto":""}
+{"texto":"The Grand Budapest Hotel (2014)"}
+{"texto":""}
+{"texto":"TV series Frasier (1994)"}
+{"texto":""}
+{"texto":"Netflix show, Stranger Things (2016)"}
+{"texto":""}
+{"texto":"Jaws (1975)"}
+{"texto":""}
+{"texto":"TV show Starsky & Hutch (1975)"}
+{"texto":""}
+{"texto":"Blade Runner 2049 (2017)"}
+{"texto":""}
+{"texto":"'Breaking Bad', Season 4 (2011)"}
+{"texto":""}
+{"texto":"Citizen Kane (1941)"}
+{"texto":""}
+{"texto":"Amelie (2001)"}
+{"texto":""}
+{"texto":"\fPhoto genres and usage contexts"}
+{"texto":"You can sometimes get a coherent look just by specifying the context: is this photo from a fashion magazine, a hard-hitting exposé in a"}
+{"texto":"newspaper, or a wedding photographer's portfolio?"}
+{"texto":""}
+{"texto":"“Photo of a 50-year old white man, silver hair, neat beard, wearing a red gilet, thick-rimmed glasses…\""}
+{"texto":""}
+{"texto":"action sports photography, fast"}
+{"texto":""}
+{"texto":"editorial fashion photography,"}
+{"texto":""}
+{"texto":"candid street portrait,"}
+{"texto":""}
+{"texto":"professional corporate portrait,"}
+{"texto":""}
+{"texto":"flash photography, event"}
+{"texto":""}
+{"texto":"shutter speed from ESPN"}
+{"texto":""}
+{"texto":"from Vogue magazine"}
+{"texto":""}
+{"texto":"photojournalism from The New"}
+{"texto":""}
+{"texto":"from investor prospectus"}
+{"texto":""}
+{"texto":"photography, film premier"}
+{"texto":""}
+{"texto":"York Times"}
+{"texto":""}
+{"texto":"photograph from celebrity news"}
+{"texto":"website"}
+{"texto":""}
+{"texto":"\fPortrait photographer prompts, select tests"}
+{"texto":"“Photo of a young Mexican woman in the style of…”"}
+{"texto":""}
+{"texto":"George Hurrell"}
+{"texto":""}
+{"texto":"Martin Schoeller"}
+{"texto":""}
+{"texto":"Dorothea Lange"}
+{"texto":""}
+{"texto":"Lee Jeffries​"}
+{"texto":""}
+{"texto":"Terry Richardson"}
+{"texto":""}
+{"texto":"Many thanks to Michael Green for sharing the results of his research. Follow him on Twitter or Instagram!"}
+{"texto":""}
+{"texto":"\fSidebar: is"}
+{"texto":""}
+{"texto":"Artists need to make a living. After all, it's only through the creation of human art to date DALL·E"}
+{"texto":""}
+{"texto":"prompting"}
+{"texto":""}
+{"texto":"and I can just conjure up art 'in the style of [artist]'?"}
+{"texto":""}
+{"texto":"for living"}
+{"texto":"artists,"}
+{"texto":"like… OK?"}
+{"texto":""}
+{"texto":"has anything to be trained on! So what becomes of an artist, once civilians like you"}
+{"texto":""}
+{"texto":"Van Gogh's ghost can surely cope with such indignities – but living artists might feel differently"}
+{"texto":"about having their unique style automagically cloned."}
+{"texto":""}
+{"texto":"Of course, DALL·E's policies disallow uploading images that you don't own the rights for."}
+{"texto":"(Although unlike naughty words in prompts, Open AI really has no way of checking.)"}
+{"texto":""}
+{"texto":"But once an artist reaches a certain level of renown, and DALL·E has countered their art in the"}
+{"texto":"wild, it's possible for users to deploy the artist's style simply by prompting for it in text, at least in"}
+{"texto":"theory. (In practice, DALL·E 2 is currently quite hit and miss at mimicking particular artists,"}
+{"texto":"but in a year or two? Maybe not.) The debate around doing so is not without substance,"}
+{"texto":"although we should also remember that successful artists have always attracted loving imitators"}
+{"texto":"(and cynical impersonators) long prior to the advent of artificial intelligence."}
+{"texto":""}
+{"texto":"Legally, although an artist's 'style' cannot be subject to copyright, derivative works of specific"}
+{"texto":"​"}
+{"texto":"artworks could possibly construed as infringing. (They arguably aren't infringing - but then again,"}
+{"texto":"you might not be able to afford to defend yourself.)"}
+{"texto":""}
+{"texto":"Only artists who died before 1951 (70 years ago) now have their"}
+{"texto":"artwork safely in the public domain."}
+{"texto":""}
+{"texto":"\fClockwise from top left:"}
+{"texto":""}
+{"texto":"1) an original artwork by"}
+{"texto":"Simon Stålenhag"}
+{"texto":""}
+{"texto":"2) right, a DALL·E generation"}
+{"texto":"for the prompt: Monumental"}
+{"texto":"old ruins tower of a dark"}
+{"texto":"misty forest, overcast, sci-fi"}
+{"texto":"digital painting by Simon"}
+{"texto":"Stålenhag"}
+{"texto":""}
+{"texto":"3) below, digital artworks by"}
+{"texto":"human artists 'inspired by'"}
+{"texto":"Stålenhag, on Behance"}
+{"texto":""}
+{"texto":"\fA few final"}
+{"texto":"photography"}
+{"texto":"ideas"}
+{"texto":""}
+{"texto":"1. Don't forget, you can still edit your images in familiar tools like"}
+{"texto":"Photoshop, Lightroom, Snapseed and Instagram. So when it comes to"}
+{"texto":"colour grading or vintage effects, it might be easier to use these!​"}
+{"texto":"2. If your output has a human face in, you won't be able to re-upload"}
+{"texto":"the file later to inpaint/outpaint/uncrop - but you can edit it now,"}
+{"texto":"directly in DALL·E. (This doesn't apply to illustrations!)​"}
+{"texto":"3. DALL·E also knows about a lot of photographers, directors,"}
+{"texto":"movies - more than could possibly be documented here. But expect to"}
+{"texto":"see more examples in Version 2 of this document, coming soon!​"}
+{"texto":"4. Try TenCent's free face restorer AI to make minor facial tweaks."}
+{"texto":"Note, it will only remove small artefacts and blurred details, not change"}
+{"texto":"the geometry of a face altogether (it assumes the input is a real"}
+{"texto":"photograph that's been damaged)​"}
+{"texto":"5. Are you sure you want a photo? Ask yourself if this is something"}
+{"texto":"that could realistically be photographed: e.g, it's easy to draw 'a mouse"}
+{"texto":"and elephant that are friends', but because they are such different"}
+{"texto":"sizes in reality, it's very difficult to create a plausible photo that brings it"}
+{"texto":"to life.​(In fact, DALL·E will sometimes resort to generating 'toy"}
+{"texto":"animals' that can conceivably be photographed together)"}
+{"texto":"6. If you just want a very clear photo of your subject, rather than a candid"}
+{"texto":"situation or location, ask for 'studio lighting' or 'studio photography'"}
+{"texto":"Digital art of portrait of a Chinese man, holding a DSLR camera, excited facial expression, head-and-shoulders shot,"}
+{"texto":""}
+{"texto":"white background, cute Pixar character, houdini 3D render"}
+{"texto":""}
+{"texto":"\f3—"}
+{"texto":""}
+{"texto":"illustration"}
+{"texto":""}
+{"texto":"\fIllustration styles, analog media, monochrome"}
+{"texto":""}
+{"texto":"Stencil, street art, Banksy (source)"}
+{"texto":""}
+{"texto":"Charcoal sketch (source)"}
+{"texto":""}
+{"texto":"Ballpoint pen art (source)"}
+{"texto":""}
+{"texto":"Woodcut (source)"}
+{"texto":""}
+{"texto":"Pencil sketch (source)"}
+{"texto":""}
+{"texto":"Field journal line art (source)"}
+{"texto":""}
+{"texto":"Pencil drawing, detailed,"}
+{"texto":""}
+{"texto":"Political cartoon from U.S."}
+{"texto":""}
+{"texto":"hyper-detailed, very realistic (via)"}
+{"texto":""}
+{"texto":"newspaper"}
+{"texto":""}
+{"texto":"Colouring-in sheet (source)"}
+{"texto":""}
+{"texto":"Etching (source)"}
+{"texto":""}
+{"texto":"\fIllustration styles, analog media, colour"}
+{"texto":""}
+{"texto":"Crayon (source)"}
+{"texto":""}
+{"texto":"Child's drawing / children'"}
+{"texto":""}
+{"texto":"Acrylic on canvas (source)"}
+{"texto":""}
+{"texto":"Watercolor (source)"}
+{"texto":""}
+{"texto":"drawing (source)"}
+{"texto":""}
+{"texto":"Oil painting (source)"}
+{"texto":""}
+{"texto":"Ukiyo-e (source)"}
+{"texto":""}
+{"texto":"Coloured pencil, detailed"}
+{"texto":"(Source)"}
+{"texto":""}
+{"texto":"Chinese watercolor (source)"}
+{"texto":""}
+{"texto":"Pastels (source)"}
+{"texto":""}
+{"texto":"Airbrush (source)"}
+{"texto":""}
+{"texto":"\fIllustration styles, digital media"}
+{"texto":""}
+{"texto":"Alegria, 'corporate memphis'"}
+{"texto":""}
+{"texto":"Collage, photocollage,"}
+{"texto":""}
+{"texto":"Vector art (source)"}
+{"texto":""}
+{"texto":"Watercolor & pen (source)"}
+{"texto":""}
+{"texto":"Screen printing (source)"}
+{"texto":""}
+{"texto":"Sticker illustration (source)"}
+{"texto":""}
+{"texto":"Storybook (source)"}
+{"texto":""}
+{"texto":"Digital painting (source)"}
+{"texto":""}
+{"texto":"magazine collage (source)"}
+{"texto":""}
+{"texto":"Low poly (source)"}
+{"texto":""}
+{"texto":"Layered paper (source)"}
+{"texto":""}
+{"texto":"\fIllustration styles, instructional"}
+{"texto":""}
+{"texto":"Blueprint (source)"}
+{"texto":""}
+{"texto":"Patent drawing (source)"}
+{"texto":""}
+{"texto":"Cutaway (source)"}
+{"texto":""}
+{"texto":"IKEA manual (source)"}
+{"texto":""}
+{"texto":"Instruction manual (source)"}
+{"texto":""}
+{"texto":"Botanical illustration (source)"}
+{"texto":""}
+{"texto":"Mythological map (source)"}
+{"texto":""}
+{"texto":"Voynich manuscript (source)"}
+{"texto":""}
+{"texto":"Scientific diagram (source)"}
+{"texto":""}
+{"texto":"Voroni diagram (source)"}
+{"texto":""}
+{"texto":"\fIllustrations, 3D + textured"}
+{"texto":""}
+{"texto":"Isometric 3D (source)"}
+{"texto":""}
+{"texto":"Black velvet, Edgar Leeteg"}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"3D render, houdini 3D, octane 3D,"}
+{"texto":""}
+{"texto":"Claymation, Aardman Animation,"}
+{"texto":""}
+{"texto":"ZBrush, Maya, Cinema 4D, Blender"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"Scratch art, foil art, gold on black"}
+{"texto":""}
+{"texto":"Perler beads (Hama beads)"}
+{"texto":""}
+{"texto":"Felt pieces (source)"}
+{"texto":""}
+{"texto":"Screenshot of X from (game, real"}
+{"texto":"or imaginary, console, year)​(via)"}
+{"texto":""}
+{"texto":"Fabric pattern (source)"}
+{"texto":""}
+{"texto":"Tattoo (source)"}
+{"texto":""}
+{"texto":"\fIllustration styles, character + cartoon"}
+{"texto":""}
+{"texto":"Character reference sheet (via)"}
+{"texto":""}
+{"texto":"Comic book art (source)"}
+{"texto":""}
+{"texto":"Anime (source)"}
+{"texto":""}
+{"texto":"Pixar (source)"}
+{"texto":""}
+{"texto":"Studio Ghibli (source)"}
+{"texto":""}
+{"texto":"Vintage Disney (source)"}
+{"texto":""}
+{"texto":"Pixel Art (source)"}
+{"texto":""}
+{"texto":"1990s Disney, cel shading (source)"}
+{"texto":""}
+{"texto":"1970s grainy vintage illustration"}
+{"texto":""}
+{"texto":"Hanna Barbera, 1960s, Scooby"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"Doo, Flintstones, Jetsons, etc"}
+{"texto":""}
+{"texto":"\fin the style of… (animated TV shows + films)"}
+{"texto":""}
+{"texto":"South Park"}
+{"texto":""}
+{"texto":"The Simpsons"}
+{"texto":""}
+{"texto":"Spirited Away (source)"}
+{"texto":""}
+{"texto":"Family Guy"}
+{"texto":""}
+{"texto":"Bojack Horseman (source)"}
+{"texto":""}
+{"texto":"Adventure Time (source)"}
+{"texto":""}
+{"texto":"Powerpuff Girls"}
+{"texto":""}
+{"texto":"vintage Looney Tunes (1961)"}
+{"texto":""}
+{"texto":"Pixar's 'Up'"}
+{"texto":""}
+{"texto":"The Far Side (print comic)"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"\fin the style of… (particular illustrators)"}
+{"texto":""}
+{"texto":"Beatrix Potter (Peter Rabbit etc)"}
+{"texto":""}
+{"texto":"Ralph Steadman (Fear &"}
+{"texto":"Loathing, etc) (via Discord)"}
+{"texto":""}
+{"texto":"Quentin Blake (from Roald Dahl"}
+{"texto":""}
+{"texto":"Hayao Miyazaki (Studio Ghibli)"}
+{"texto":""}
+{"texto":"books, etc)​"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"Norman Rockwell (source)"}
+{"texto":""}
+{"texto":"Dr. Seuss (source)"}
+{"texto":""}
+{"texto":"Bill Watterson (Calvin & Hobbes)"}
+{"texto":""}
+{"texto":"Maurice Sendak (Where the"}
+{"texto":"Wild Things Are)"}
+{"texto":""}
+{"texto":"Tove Jansson (The Moomins)"}
+{"texto":""}
+{"texto":"Wanda Gág"}
+{"texto":""}
+{"texto":"\f4—"}
+{"texto":""}
+{"texto":"art history"}
+{"texto":""}
+{"texto":"\fEarly art history: ancient, medieval, Dark Ages"}
+{"texto":""}
+{"texto":"Cave paintings, pre-historic,"}
+{"texto":""}
+{"texto":"Ancient Egyptian mural, tomb,"}
+{"texto":""}
+{"texto":"Ancient Egypt papyrus, Book of the"}
+{"texto":""}
+{"texto":"Fayum portrait, Mummy portrait,"}
+{"texto":""}
+{"texto":"Decorative Minoan mural, 2000"}
+{"texto":""}
+{"texto":"Lascaux, primitive.​"}
+{"texto":""}
+{"texto":"fresco, register, hieroglyphics.​"}
+{"texto":""}
+{"texto":"Dead, well-preserved.​"}
+{"texto":""}
+{"texto":"from Egypt, from Luxor, on wood.​"}
+{"texto":""}
+{"texto":"BCE, artefact, ancient."}
+{"texto":""}
+{"texto":"Roman mosaic, Ancient Rome,"}
+{"texto":""}
+{"texto":"Ancient Roman painting, Fourth Style,"}
+{"texto":""}
+{"texto":"Nuremberg Chronicle, 1493,"}
+{"texto":""}
+{"texto":"Byzantine icon, Christian icon,"}
+{"texto":""}
+{"texto":"Giilded codex, lavish, illiminated,"}
+{"texto":""}
+{"texto":"opus tesellatum."}
+{"texto":""}
+{"texto":"Third Style, second Style, Pompeii"}
+{"texto":""}
+{"texto":"Liber Chronicarum, Michael Wolgemut"}
+{"texto":""}
+{"texto":"halo, painting, Eastern Roman."}
+{"texto":""}
+{"texto":"maniscript, vellum, well-preserved"}
+{"texto":""}
+{"texto":"\fRenaissance - modern art movements"}
+{"texto":""}
+{"texto":"Renaissance painting (1400-1600)"}
+{"texto":""}
+{"texto":"Mannerism, Mannerist (1500-1600)"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"Realism, realist, 19th century,"}
+{"texto":"Gustave Courbet"}
+{"texto":""}
+{"texto":"Art Nouveau"}
+{"texto":""}
+{"texto":"Baroque, 17th c, Velázquez,"}
+{"texto":""}
+{"texto":"Rococo, 1730, late Baroque,"}
+{"texto":""}
+{"texto":"Neoclassicism, capriccio, 18th c,"}
+{"texto":""}
+{"texto":"Caravaggio, Vermeer (source)"}
+{"texto":""}
+{"texto":"Antoine Watteau (source)"}
+{"texto":""}
+{"texto":"Angelica Kauffmann (source)"}
+{"texto":""}
+{"texto":"Impressionism, Monet, Renoit"}
+{"texto":""}
+{"texto":"Post-impressionism, Cézanne,"}
+{"texto":""}
+{"texto":"Symbolist painting, symbolism,"}
+{"texto":""}
+{"texto":"Gaugin, van Gogh, Seurat"}
+{"texto":""}
+{"texto":"dreamlike, 19th century"}
+{"texto":""}
+{"texto":"\fModern art movements"}
+{"texto":""}
+{"texto":"Art deco, 1925, vintage, streamline"}
+{"texto":""}
+{"texto":"Abstract expressionism, paint"}
+{"texto":""}
+{"texto":"Bauhaus, 1930s, geometric, Paul"}
+{"texto":""}
+{"texto":"Colour field painting, abstract,"}
+{"texto":""}
+{"texto":"Cubism, cubist, 1910, Picasso,"}
+{"texto":""}
+{"texto":"moderne, luxury, poster (source)"}
+{"texto":""}
+{"texto":"splatters, Jackson Pollock (source)"}
+{"texto":""}
+{"texto":"Klee, Wassily Kandinsky (source)"}
+{"texto":""}
+{"texto":"Rothko, 60s, Clyfford Still"}
+{"texto":""}
+{"texto":"Georges Braque (source)​"}
+{"texto":""}
+{"texto":"y"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"Constructivist, constructivism,"}
+{"texto":""}
+{"texto":"Dada, Dadaism, Dadaist, 1920,"}
+{"texto":""}
+{"texto":"De Stijl, neoplasticism, Piet Mondrian,"}
+{"texto":""}
+{"texto":"Expressionism, expressionist,"}
+{"texto":""}
+{"texto":"Fauvism, fauvist, 1905, Andre"}
+{"texto":""}
+{"texto":"Russian, design, 1915, Soviet-era"}
+{"texto":""}
+{"texto":"absurd, nonsense , collage,"}
+{"texto":""}
+{"texto":"Theon can Doesburg, 1920, Dutch​"}
+{"texto":""}
+{"texto":"1912, German Expressionism"}
+{"texto":""}
+{"texto":"Derain, Henri Matisse (source)"}
+{"texto":""}
+{"texto":"(via discord?)"}
+{"texto":""}
+{"texto":"assemblage, cut-up, photomontage​"}
+{"texto":""}
+{"texto":"(source)​"}
+{"texto":""}
+{"texto":"\fModern art movements II"}
+{"texto":""}
+{"texto":"Futurism, Futurist, 1913, Italian,"}
+{"texto":""}
+{"texto":"Metaphysical painting, de Chirico,"}
+{"texto":""}
+{"texto":"Surrealism, surrealist, Magritte,"}
+{"texto":""}
+{"texto":"aeropittura, dynamism"}
+{"texto":""}
+{"texto":"Italian, Carlo Carrà"}
+{"texto":""}
+{"texto":"Dali, Andre Breton, Max Ernst"}
+{"texto":""}
+{"texto":"Suprematism, abstract, geometric,"}
+{"texto":""}
+{"texto":"Mexican muralism, Diego Rivera,"}
+{"texto":""}
+{"texto":"Neo-Expressionism, 1980s"}
+{"texto":""}
+{"texto":"Kazimir Malevich, 1913,"}
+{"texto":""}
+{"texto":"Pop Art, Warhol, 1960s (source)"}
+{"texto":""}
+{"texto":"Street art, graffiti, urban public"}
+{"texto":"art, independent"}
+{"texto":""}
+{"texto":"Orphism, Orphist, František"}
+{"texto":""}
+{"texto":"Street photography, urban,"}
+{"texto":""}
+{"texto":"José Clemente Orozco,"}
+{"texto":""}
+{"texto":"Kupka, Robert Delaunay, Sonia"}
+{"texto":""}
+{"texto":"candid, flaneur, unposed"}
+{"texto":""}
+{"texto":"David Alfaro Siqueiros"}
+{"texto":""}
+{"texto":"Delaunay"}
+{"texto":""}
+{"texto":"\fAssorted artist tests"}
+{"texto":""}
+{"texto":"Edward Hopper, 1942"}
+{"texto":""}
+{"texto":"Keith Haring (source)"}
+{"texto":""}
+{"texto":"Salvador Dali (source)"}
+{"texto":""}
+{"texto":"Georges Surat​"}
+{"texto":""}
+{"texto":"Vincent van Gogh"}
+{"texto":""}
+{"texto":"Inspired? Try Google's Arts & Culture Hub to find 13,000 more artists you can work with."}
+{"texto":""}
+{"texto":"All in all, I've found DALL·E struggles to convincingly or reliably generate pastiches of artists. The outputs are usually aesthetically pleasing, but tend to lack the very"}
+{"texto":""}
+{"texto":"specific style that you'd expect. One confounding factor is that an individual artist may actually utilise many different styles during their career (and the training set may include"}
+{"texto":""}
+{"texto":"a lot of the artist's minor or less-celebrated work, like preparatory sketches) whereas our conception of an artist's \"look\" tends to be based around a few key masterpieces."}
+{"texto":""}
+{"texto":"\fMore distinctive artist styles"}
+{"texto":""}
+{"texto":"Thomas Kinkade (source)"}
+{"texto":""}
+{"texto":"Lisa Frank"}
+{"texto":""}
+{"texto":"Basquiat (source)"}
+{"texto":""}
+{"texto":"Simon Stålenhag"}
+{"texto":""}
+{"texto":"Zdzisław Beksiński (source)"}
+{"texto":""}
+{"texto":"HR Giger (source)"}
+{"texto":""}
+{"texto":"Robert Crumb"}
+{"texto":""}
+{"texto":"Hieronymus Bosch, The Garden of"}
+{"texto":""}
+{"texto":"Gustav Kilmt, symbolist, gold"}
+{"texto":""}
+{"texto":"Roy Lichenstein, half-tone dots,"}
+{"texto":""}
+{"texto":"Earthly Delights"}
+{"texto":""}
+{"texto":"leaf, 1908"}
+{"texto":""}
+{"texto":"comic detail, pop art"}
+{"texto":""}
+{"texto":"\f5—"}
+{"texto":""}
+{"texto":"3D artwork"}
+{"texto":""}
+{"texto":"\fSculpture & statue material examples"}
+{"texto":""}
+{"texto":"Bronze statue"}
+{"texto":""}
+{"texto":"Butter sculpture"}
+{"texto":""}
+{"texto":"Marble statue (source)"}
+{"texto":""}
+{"texto":"(source)"}
+{"texto":""}
+{"texto":"Sand sculpture (source)"}
+{"texto":""}
+{"texto":"Terracotta warriors (source)"}
+{"texto":""}
+{"texto":"Jade sculpture (source)"}
+{"texto":""}
+{"texto":"Topiary, plant sculpture (source)"}
+{"texto":""}
+{"texto":"Ice carving (source)"}
+{"texto":""}
+{"texto":"Gold, silver, etc (source)"}
+{"texto":""}
+{"texto":"Plastic, fiberglass (hello)"}
+{"texto":""}
+{"texto":"\fThings for human bodies"}
+{"texto":""}
+{"texto":"Clothes, shoes, and individual"}
+{"texto":""}
+{"texto":"Costumes, outfits, costumery,"}
+{"texto":""}
+{"texto":"clothing items (source)"}
+{"texto":""}
+{"texto":"theatrical, Halloween, cosplay"}
+{"texto":""}
+{"texto":"Fashion, fashion photography,"}
+{"texto":""}
+{"texto":"Historic / futuristic attire,"}
+{"texto":""}
+{"texto":"fashion & haute couture"}
+{"texto":""}
+{"texto":"armor, technology, alternate history, (source)"}
+{"texto":"imaginary culture, fantasy (source)"}
+{"texto":""}
+{"texto":"Hairstyles, haircuts"}
+{"texto":""}
+{"texto":"Nail art"}
+{"texto":""}
+{"texto":"Tattoos and body art"}
+{"texto":""}
+{"texto":"Jewellery, necklace, rings, etc"}
+{"texto":""}
+{"texto":"Accessories, bags (source)"}
+{"texto":""}
+{"texto":"Makeup, cosmetics, face paint"}
+{"texto":"(source)​"}
+{"texto":""}
+{"texto":"\fPlaces and spaces"}
+{"texto":""}
+{"texto":"Architecture, buildings, wings"}
+{"texto":""}
+{"texto":"Stage sets, theatrical sets,"}
+{"texto":""}
+{"texto":"Domestic interiors, home design"}
+{"texto":""}
+{"texto":"TV sets"}
+{"texto":""}
+{"texto":"Commercial interiors, hospitality,"}
+{"texto":""}
+{"texto":"Public realm, streets, squares,"}
+{"texto":""}
+{"texto":"public buildings, workplaces"}
+{"texto":""}
+{"texto":"plazas, cityscapes"}
+{"texto":""}
+{"texto":"Gardens, landscaping, natural,"}
+{"texto":""}
+{"texto":"Inflatables, parade floats,"}
+{"texto":""}
+{"texto":"Attractions, installations, theme"}
+{"texto":""}
+{"texto":"Furniture, furnishings, rugs, sofas,"}
+{"texto":""}
+{"texto":"Events, festivals, event"}
+{"texto":""}
+{"texto":"outdoor spaces"}
+{"texto":""}
+{"texto":"hot air balloons"}
+{"texto":""}
+{"texto":"parks, educational spaces, venues"}
+{"texto":""}
+{"texto":"beds, curtains, etcetera"}
+{"texto":""}
+{"texto":"design, event planning, event"}
+{"texto":"decoration"}
+{"texto":""}
+{"texto":"\fCrafty arts: paper & textiles"}
+{"texto":""}
+{"texto":"Papercraft, origami (source)"}
+{"texto":""}
+{"texto":"Diorama, dolls house (source)"}
+{"texto":""}
+{"texto":"Pop-up book"}
+{"texto":""}
+{"texto":"Paper embossing"}
+{"texto":""}
+{"texto":"Papier mache"}
+{"texto":""}
+{"texto":"Needle felting (source)"}
+{"texto":""}
+{"texto":"Appliqué needlework"}
+{"texto":""}
+{"texto":"Embroidery (source)"}
+{"texto":""}
+{"texto":"Knitting patterns"}
+{"texto":""}
+{"texto":"Amigurumi (source)"}
+{"texto":""}
+{"texto":"\fCrafty arts: ceramics & glass"}
+{"texto":""}
+{"texto":"Ceramic, bust, Kintsugi"}
+{"texto":""}
+{"texto":"Clay, pottery, sculpture (source)"}
+{"texto":""}
+{"texto":"Porcelain"}
+{"texto":""}
+{"texto":"Azulejo, Portuguese blue-and"}
+{"texto":""}
+{"texto":"Stained glass (source)"}
+{"texto":""}
+{"texto":"-white painted tile art"}
+{"texto":""}
+{"texto":"Glass paperweight"}
+{"texto":""}
+{"texto":"Snowglobe"}
+{"texto":""}
+{"texto":"Bubblegram"}
+{"texto":""}
+{"texto":"Crystal figure"}
+{"texto":""}
+{"texto":"Tile art, mosaic (source)"}
+{"texto":""}
+{"texto":"\f'Photographing' your work"}
+{"texto":"Aside from defining the subject, don't forget you can also use photography prompts to control how DALL·E depicts it. See the photography section for more."}
+{"texto":""}
+{"texto":"…surrounded by foliage, dreamy autochrome"}
+{"texto":""}
+{"texto":"…studio photography, dark grey background, softly backlit, gentle"}
+{"texto":""}
+{"texto":"pinhole photography."}
+{"texto":""}
+{"texto":"smoke effect, photo courtesy Museum of Art"}
+{"texto":""}
+{"texto":"…dramatic low-key neon lighting, light painting, editorial photo from"}
+{"texto":"magazine,"}
+{"texto":""}
+{"texto":"\f6—"}
+{"texto":""}
+{"texto":"techniques"}
+{"texto":""}
+{"texto":"\fEdits: fixing a detail"}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"Result"}
+{"texto":""}
+{"texto":"Source image: \"Film still, two construction"}
+{"texto":""}
+{"texto":"Delete the offending detail"}
+{"texto":""}
+{"texto":"workers arguing intently, over-the-shoulder"}
+{"texto":""}
+{"texto":"Final image, plus a pass from ARC's free"}
+{"texto":"Face Restorer."}
+{"texto":""}
+{"texto":"shot, colourful cinematography from"}
+{"texto":""}
+{"texto":"Prompt​for the whole image, but now we can"}
+{"texto":""}
+{"texto":"Amélie (2001)\""}
+{"texto":""}
+{"texto":"spend more words describing the missing detail:"}
+{"texto":""}
+{"texto":"A bit better: still not perfect though! We"}
+{"texto":""}
+{"texto":"'A man in an orange construction vest, intent"}
+{"texto":""}
+{"texto":"could have obviously tried generating more"}
+{"texto":""}
+{"texto":"The face is a bit wonky. Let's get DALL·E"}
+{"texto":""}
+{"texto":"expression, close-up on face, ocular"}
+{"texto":""}
+{"texto":"variations and tweaking the face prompt to"}
+{"texto":""}
+{"texto":"to try again, shall we?"}
+{"texto":""}
+{"texto":"reflections, furrowed eyebrows'"}
+{"texto":""}
+{"texto":"get an even more realistic result"}
+{"texto":""}
+{"texto":"\fEdits: replacing the subject"}
+{"texto":"This works especially well for photos, as the lighting, shadows and composition are in harmony with where your new subject is going to be."}
+{"texto":"Basically, replacing a previous 'focal point' tends to work better, than filling an an empty space where there was nothing."}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"Result"}
+{"texto":""}
+{"texto":"Source image: Unsplash photo from Jonathan"}
+{"texto":"Formento."}
+{"texto":""}
+{"texto":"Let's get rid of the arch!"}
+{"texto":""}
+{"texto":"1) Erase the element you want to replace"}
+{"texto":""}
+{"texto":"2) Prompt for the entire replacement image (both"}
+{"texto":"the new thing and what you're keeping): 'Alien"}
+{"texto":"ruins, made of black stone, in an unusual"}
+{"texto":"landscape, sunny day'"}
+{"texto":""}
+{"texto":"Final image. Easy!"}
+{"texto":""}
+{"texto":"\fEdits: replacing the background"}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"Result"}
+{"texto":""}
+{"texto":"Source image, generated by DALL·E."}
+{"texto":""}
+{"texto":"Let's put our subject somewhere less gloomy."}
+{"texto":""}
+{"texto":"Aggressively delete the background. Unlike"}
+{"texto":""}
+{"texto":"Prompt for the entire replacement image (both the"}
+{"texto":""}
+{"texto":"regular Photoshop, you don't need to worry about"}
+{"texto":""}
+{"texto":"new thing and what you're keeping): 'An oil"}
+{"texto":""}
+{"texto":"losing some of the edge of the subject - the AI will"}
+{"texto":""}
+{"texto":"painting of a boy in red coat, sat on a boulder, in"}
+{"texto":""}
+{"texto":"be smart enough to rebuild it."}
+{"texto":""}
+{"texto":"a misty woodland clearing, campfire in"}
+{"texto":"background, warm fire glow, cosy fantasy art'"}
+{"texto":""}
+{"texto":"\fEdits: simple uncropping / 'outpainting'"}
+{"texto":"This is not (yet!) 'built in' to DALL·E - you'll need to use another image editing tool as part of the process. It's very easy though!"}
+{"texto":"Personally, I like PhotoPea, the free online Photoshop alternative."}
+{"texto":"This process will not work if the source image contains a photo-style depiction of a human face, as DALL·E currently blocks the upload."}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"Result"}
+{"texto":""}
+{"texto":"1) Download the image, import into PhotoPea etc"}
+{"texto":""}
+{"texto":"4) Export as a PNG"}
+{"texto":""}
+{"texto":"7) Add a text prompt, could be the same as the"}
+{"texto":""}
+{"texto":"2) Shrink the image (or expand the canvas) so it is"}
+{"texto":""}
+{"texto":"5) Upload it to DALL·E and choose 'edit'"}
+{"texto":""}
+{"texto":"original or with additional descriptive focus on"}
+{"texto":""}
+{"texto":"surrounded by blank space"}
+{"texto":""}
+{"texto":"6) Delete at least one pixel of the image, using he"}
+{"texto":""}
+{"texto":"surrounding: Oil painting, portrait of a boy with a"}
+{"texto":""}
+{"texto":"3) If the blank space is white, delete that layer or"}
+{"texto":""}
+{"texto":"eraser tool"}
+{"texto":""}
+{"texto":"sloth in a vintage office, mid-century modern"}
+{"texto":""}
+{"texto":"pixels, so it's transparent"}
+{"texto":""}
+{"texto":"design, painting by Frida Kahlo (1932), from"}
+{"texto":"Mexican Modernism exhibition"}
+{"texto":""}
+{"texto":"\fEdits: uncropping, prompts & positioning"}
+{"texto":"1) Rather than simply zooming out 50%… try using the source image in different positions, sizes + rotations"}
+{"texto":"2) Rather than repeating the same prompt as source, try entering different text that clearly defines the blank area"}
+{"texto":"3) Rather than using the entire square source image… try using the in-built erase tool to crop it back a little"}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"Here we: put our source image to one side, crop it back slightly, don't shrink it, and give a prompt to create"}
+{"texto":"a new character: 'Oil painting, two women looking over their shoulders, towards the viewer, mysterious facial expression, red"}
+{"texto":"headscarf, blue headscarf, exquisite detail, acclaimed masterpiece'"}
+{"texto":""}
+{"texto":"\fEdits: uncropping, zooming out forever"}
+{"texto":"Of course, we can take any uncropped image and continue uncropping that, in a recursive process that zooms out infinitely."}
+{"texto":"This can make for some pretty cool videos, especially if you keep each uncrop consistent and central (as in the first example),"}
+{"texto":"although producing a video like this currently requires some technical chops - and a program like After Effects or Da Vinci Resolve."}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"In this example we: put the source image up top, shrink it to be quite small, then prompt for a background: 'Oil painting of two"}
+{"texto":"women standing waist-deep in water, mysterious underground lake, flooded cavern, ripples, ethereal lighting'"}
+{"texto":""}
+{"texto":"\fEdits: uncropping, context jumping"}
+{"texto":"We can also put our source image in a different context: in a frame on a wall, as a reflection in someone's eye, in a 'WANTED'"}
+{"texto":"poster, or something else that suudenly reveals a 'new layer of reality.'"}
+{"texto":""}
+{"texto":"Here we: position the source image non-centrally, crop it slightly, remove the DALL-E watermark, make it quite small, then prompt"}
+{"texto":"for a background: 'Framed oil paintings above a fireplace, ornate gold frames, in a Victorian study, detailed digital"}
+{"texto":"illustration'"}
+{"texto":""}
+{"texto":"\fEdits: making landscape + portrait images"}
+{"texto":"Like uncropping, this also requires an image editor like PhotoPea. This time you'll need to use it twice!"}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"5) Finally, combine the two new images in a photo editing tool. Make the"}
+{"texto":"canvas bigger, then drag the new image to line up with the old one. Use the"}
+{"texto":"'Difference' layer mode - when the overlapping area goes totally black, you're done!"}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"1) Take your source image"}
+{"texto":"2) In an editing tool, drag it to one"}
+{"texto":"side, leaving the blank space"}
+{"texto":"transparent."}
+{"texto":"3) Export this as a .PNG, upload it"}
+{"texto":"to DALL·E, and choose 'edit'"}
+{"texto":"4) Delete any pixel, then prompt for"}
+{"texto":"the new image, e.g: 'alien"}
+{"texto":"spacecraft in the cosmos'"}
+{"texto":""}
+{"texto":"+"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"="}
+{"texto":""}
+{"texto":"4"}
+{"texto":""}
+{"texto":"\fEdits: making ultra-HD murals"}
+{"texto":"By repeating the previous process multiple times, you can create infinitely wide or tall images, either extending along one axis (as in"}
+{"texto":"panoramas or skyscrapers) or in both directions at once. (If you expand into all directions, remember that you will eventually need to"}
+{"texto":"overlap images on multiple sides, so everything lines up in the final edit.)"}
+{"texto":""}
+{"texto":"\fMural by David Schnurr, Open AI, 4096 × 2341"}
+{"texto":""}
+{"texto":"\fEdits: combining images, low-res version"}
+{"texto":"You can use DALL·E to combine two separate images into a single scene. This only really works if they're similar in"}
+{"texto":"style - DALL·E will struggle if you're trying to combine a pencil sketch and photo, for example."}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"In a photo editing app, place your two"}
+{"texto":""}
+{"texto":"Two Jedi warriors, lightsabers extended,"}
+{"texto":""}
+{"texto":"Octane render, fisheye lens, shallow depth"}
+{"texto":""}
+{"texto":"source images onto a single square"}
+{"texto":""}
+{"texto":"encourage you to move forward into battle"}
+{"texto":""}
+{"texto":"of field, flooded basement with water"}
+{"texto":""}
+{"texto":"frame. Delete the background so it's"}
+{"texto":""}
+{"texto":"halfway up the room, mice floating on"}
+{"texto":""}
+{"texto":"transparent, export as a .png, and upload"}
+{"texto":""}
+{"texto":"wooden barrels for safety"}
+{"texto":""}
+{"texto":"it to DALL·E with a prompt."}
+{"texto":"(via a community experiment on Reddit. Images generated by Daniel BLN)"}
+{"texto":""}
+{"texto":"\fEdits: combining images, widescreen version"}
+{"texto":"You can use DALL·E to combine two separate images into a single scene. This only really works if they're similar in"}
+{"texto":"style - DALL·E will struggle if you're trying to combine a pencil sketch and photo, for instance,"}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"6) Finally, combine the three images in a photo editing tool. Make the canvas"}
+{"texto":"bigger, then drag the new image to line up with the old one. Use the 'Difference'"}
+{"texto":"layer mode - when the overlapping area goes totally black, you're done!"}
+{"texto":""}
+{"texto":"1"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"1+2) Gather your source images"}
+{"texto":"3) In an editing tool, create a"}
+{"texto":"square image where the opposing"}
+{"texto":"edges are visible. leaving the gap"}
+{"texto":"transparent"}
+{"texto":"4) Export this as a .PNG, upload it"}
+{"texto":"to DALL·E, and choose 'edit'"}
+{"texto":"5) Prompt for the scene, including"}
+{"texto":"the gap content. e.g 'girl riding"}
+{"texto":"horse, green hills'"}
+{"texto":""}
+{"texto":"+"}
+{"texto":""}
+{"texto":"3"}
+{"texto":""}
+{"texto":"+"}
+{"texto":""}
+{"texto":"2"}
+{"texto":""}
+{"texto":"\fPutting it all"}
+{"texto":"together"}
+{"texto":"By using repeated edits, variations,"}
+{"texto":"reprompts, inpainting, uncropping, and more,"}
+{"texto":"you can continue to tweak an image to your"}
+{"texto":"heart's content - although you might get"}
+{"texto":"through a lot of your 50 daily variations just to"}
+{"texto":"create one image!"}
+{"texto":""}
+{"texto":"In the video on the right, created by"}
+{"texto":"@ScottInAllCaps, you can see the many"}
+{"texto":"steps they went through to generate the final"}
+{"texto":"image – a great example of powerful DALL·E"}
+{"texto":"usage, beyond simply trying lots of different"}
+{"texto":"text prompts."}
+{"texto":""}
+{"texto":"Video not loading? See it here on"}
+{"texto":"Reddit."}
+{"texto":""}
+{"texto":"\fVariations: going on a weird journey"}
+{"texto":"'Variations' are a great way of creating 'similar' images to an input. Naturally, each image subtly differs from its source. If you keep making variations of variations,"}
+{"texto":"you'll slowly wander into new aesthetic territory – uncovering uncanny visuals you might not have been able to manifest with language alone."}
+{"texto":""}
+{"texto":"\fVariations: going on a weird journey"}
+{"texto":"'Variations' are a great way of creating 'similar' images to an input. Naturally, each image subtly differs from its source. If you keep making variations of variations,"}
+{"texto":"you'll slowly wander into new aesthetic territory – uncovering uncanny looks you might not have been able to manifest with language alone."}
+{"texto":""}
+{"texto":"Details and subjects"}
+{"texto":"slowly take on new"}
+{"texto":"significance - a"}
+{"texto":"geometric tattoo"}
+{"texto":"sketch becomes a"}
+{"texto":"coffee ring, a scratch"}
+{"texto":"becomes a spider, a"}
+{"texto":"swirl becomes a moon."}
+{"texto":""}
+{"texto":"\fVariations: going on a weird journey"}
+{"texto":"You can start a variation with any image you own the rights to: a DALL·E output, your own illustration or photograph, or a free asset like public domain artwork."}
+{"texto":"In this example, we just did a doodle on a notepad and uploaded a photo of it, ending up with a deeply weird photograph of a child with vertiginous hair."}
+{"texto":""}
+{"texto":"\f7—"}
+{"texto":""}
+{"texto":"showcase"}
+{"texto":""}
+{"texto":"\fThe"}
+{"texto":"rabbit"}
+{"texto":"mirror"}
+{"texto":"ritual"}
+{"texto":"On Twitter, @Lapinedelaterre"}
+{"texto":""}
+{"texto":"A Paleolithic painting depicting the rabbit mirror ritual"}
+{"texto":""}
+{"texto":"Abstract acrylic painting of the rabbit mirror ritual, earth"}
+{"texto":""}
+{"texto":"Rabbit mirror ritual, 3"}
+{"texto":""}
+{"texto":"tones, heavy impasto technique"}
+{"texto":""}
+{"texto":"is crafting a mythology of"}
+{"texto":"rabbits. And mirrors. And a"}
+{"texto":"ritual: an occult truth that, her"}
+{"texto":"work implies, has been with"}
+{"texto":"us since the dawn of time."}
+{"texto":""}
+{"texto":"Or at least the dawn of"}
+{"texto":"rabbits."}
+{"texto":""}
+{"texto":"Profile portrait of a rabbit looking in a mirror, dark"}
+{"texto":"A stain glass window depicting the rabbit mirror ritual"}
+{"texto":""}
+{"texto":"Rabbit mirror ritual, 2"}
+{"texto":""}
+{"texto":"room, top lit"}
+{"texto":""}
+{"texto":"\fGood"}
+{"texto":"morning"}
+{"texto":"Each day, AI artist"}
+{"texto":"Merzmensch Kosmopol"}
+{"texto":"prompts DALL·E for a"}
+{"texto":"good morning, in a"}
+{"texto":"different style each time."}
+{"texto":""}
+{"texto":"Good morning, by Brueghel the Elder."}
+{"texto":""}
+{"texto":"Good morning, in the style of the movie Matrix."}
+{"texto":""}
+{"texto":"Good morning, in the style of Arcimboldo."}
+{"texto":""}
+{"texto":"Here are a few charming"}
+{"texto":"results."}
+{"texto":""}
+{"texto":"\"Good morning, a movie poster for a movie by Fellini\""}
+{"texto":""}
+{"texto":"\"Good morning, as a Constructivist painting\""}
+{"texto":""}
+{"texto":"\"Good morning, a dystopian version\""}
+{"texto":""}
+{"texto":"\fSmoke"}
+{"texto":"it up"}
+{"texto":"In his fantastic article on"}
+{"texto":"DALL·E 2, artist Thomas"}
+{"texto":"Voland shares some of"}
+{"texto":"his work and prompts."}
+{"texto":"Photo of robot with 20yo girl inside, LEDs visor helmet,"}
+{"texto":""}
+{"texto":"This set of all images all"}
+{"texto":"make creative use of"}
+{"texto":""}
+{"texto":"photo of slim girl, 20yo, close-up, high detail, studio,"}
+{"texto":""}
+{"texto":"profile pose, bust shot, high detail, studio, black"}
+{"texto":""}
+{"texto":"Cyberpunk church, high detail, smoke, sharp, neon lights,"}
+{"texto":""}
+{"texto":"smoke, sharp, pink violet light, studio, 85mm sigma"}
+{"texto":""}
+{"texto":"background, smoke, sharp, cyberpunk, 85mm Sigma Art"}
+{"texto":""}
+{"texto":"neon cross"}
+{"texto":""}
+{"texto":"art lens"}
+{"texto":""}
+{"texto":"lens"}
+{"texto":""}
+{"texto":"Photo of dark temple, golden treasure, high detail,"}
+{"texto":""}
+{"texto":"House on fire at night, high detail, smoke, sharp, fog,"}
+{"texto":""}
+{"texto":"Glowing mushrooms in a natural environment with"}
+{"texto":""}
+{"texto":"smoke, sharp, fog"}
+{"texto":""}
+{"texto":"darkness"}
+{"texto":""}
+{"texto":"smoke in the frame"}
+{"texto":""}
+{"texto":"smoke, fog and mist to"}
+{"texto":"generate drama, colour,"}
+{"texto":"depth and intrigue."}
+{"texto":""}
+{"texto":"\fCreature"}
+{"texto":"feature"}
+{"texto":"On Instagram, creative"}
+{"texto":"director C Nelson uses"}
+{"texto":"DALL·E to create a"}
+{"texto":"universe of amazing,"}
+{"texto":"loveable furry monsters."}
+{"texto":""}
+{"texto":"a yellow striped monster in panic while working"}
+{"texto":""}
+{"texto":"a little red furry monster is excited jumping over a"}
+{"texto":""}
+{"texto":"on a laptop"}
+{"texto":""}
+{"texto":"mound in a misty forest"}
+{"texto":""}
+{"texto":"A black furry monster zooms high above New York"}
+{"texto":""}
+{"texto":"a wise old hairy critter wanders alone through the"}
+{"texto":""}
+{"texto":"A white hairy monster family smiles for a selfie,"}
+{"texto":""}
+{"texto":"City, close up with motion blur"}
+{"texto":""}
+{"texto":"desert on two feet"}
+{"texto":""}
+{"texto":"camera looking up, in New York City"}
+{"texto":""}
+{"texto":"a big blue furry monster takes a nap in the misty forest"}
+{"texto":""}
+{"texto":"Follow them on"}
+{"texto":"@dailydall.e"}
+{"texto":""}
+{"texto":"\fAppear here! Yes, you…"}
+{"texto":"You are reading the First Edition of the DALL·E Prompt Book."}
+{"texto":"The next edition will feature even more great ideas - and you can help!"}
+{"texto":""}
+{"texto":"💡"}
+{"texto":"🤩"}
+{"texto":"👨🏻‍💻"}
+{"texto":""}
+{"texto":"share your tips, hacks + discoveries"}
+{"texto":"be featured in the showcase section"}
+{"texto":"contribute a breakdown of key terms in your speciality, from character design"}
+{"texto":""}
+{"texto":"to architecture"}
+{"texto":""}
+{"texto":"Share 4 - 10 images with prompts, any further information, and your bio, at"}
+{"texto":"guy@copytofollow.com."}
+{"texto":""}
+{"texto":"Digital art, a cute boxy vintage robot, big eyes beckoning towards the viewer, encouraging, octane render, plain background"}
+{"texto":""}
+{"texto":"\f8—"}
+{"texto":""}
+{"texto":"appendix"}
+{"texto":""}
+{"texto":"\fLinks & further"}
+{"texto":"reading"}
+{"texto":""}
+{"texto":"Communities + social"}
+{"texto":""}
+{"texto":"Free art resources for inpainting,"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"DALL-Ery GALL-ery on Instagram"}
+{"texto":""}
+{"texto":"variations, etc:"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Official DALL·E Instagram"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Artvee: public domain art history"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"#DALLE and #DALLE2 tags on IG"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Unsplash, Pexels, Barn Images, Jay"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"The /r/dalle2 subreddit"}
+{"texto":""}
+{"texto":"Mantri, Flickr Creative Commons : free"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"The official /r/dalle2 Discord (for people"}
+{"texto":""}
+{"texto":"photography"}
+{"texto":""}
+{"texto":"with DALL-E access only)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Vecteezy, Lapa : free illustrations and"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"#dalle + #dalle2 on Twitter"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Twitter list of DALL·E users + creatives​"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Other Discords: DALL·E community server,"}
+{"texto":""}
+{"texto":"Other prompt inspiration"}
+{"texto":""}
+{"texto":"AI prompt sharing"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"dallery.gallery"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"AI art wiki modifiers"}
+{"texto":""}
+{"texto":"Tools​"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"List of aesthetics"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Other AI generators: Wombo, StarryAI,"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Prompt eng. Google Doc"}
+{"texto":""}
+{"texto":"NightCafé, MidJourney, Disco Diffusion,"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Google Arts & Culture Hub"}
+{"texto":""}
+{"texto":"Craiyon, Google Imagen (closed), Google"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Photography description words"}
+{"texto":""}
+{"texto":"Parti (closed)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Flickr Cam​era Finder"}
+{"texto":""}
+{"texto":"​"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Random prompt generator"}
+{"texto":""}
+{"texto":"Useful helpers"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"DALL·E search tools: one and two"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"drawings"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Snapseed (editing + grading)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"PhotoPea (free PS alternative)"}
+{"texto":""}
+{"texto":"Field reports"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Procreate"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"How DALL·E 2 actually works"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Capcut (freely animate photos)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"ArtStyle.ai"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"TenCent face restore"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"On DALL-E: Thomas Voland"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"remove.bg (remove background)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"The Work of Propogating Spores"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"iOS photo editing + animating tools"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"DALL·E 2 is my new Guitar Hero"}
+{"texto":""}
+{"texto":"generally (e.g: the Lighttricks suite)"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"The Origin of Vibe Shifts"}
+{"texto":""}
+{"texto":"GPT-3 text AI"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Generating Children's Stories"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"Creating infinite zoom movies​"}
+{"texto":""}
+{"texto":"•"}
+{"texto":""}
+{"texto":"\fThanks &"}
+{"texto":""}
+{"texto":"Thanks to Rundy & Luc for creating this sweet Google Doc,"}
+{"texto":""}
+{"texto":"notes"}
+{"texto":""}
+{"texto":"just seen are based. The AI Art Creation wiki was also pretty"}
+{"texto":""}
+{"texto":"after which the plentiful 'cats, in sunglasses, on chairs' you've"}
+{"texto":""}
+{"texto":"helpful."}
+{"texto":""}
+{"texto":"Thanks, of course, to Open AI for bringing DALL·E into the"}
+{"texto":"world, Joanne for managing the artist track, and Aditya for"}
+{"texto":"referring me to the test program!"}
+{"texto":""}
+{"texto":"My love to the DALL·E subreddit community and everyone who"}
+{"texto":"shares their work there, and the moderators who keep things"}
+{"texto":"vibing nicely. More broadly, thanks to everyone who shares their"}
+{"texto":"DALL·E work in the Discord, on Twitter, or elsewhere online for"}
+{"texto":"the inspiration."}
+{"texto":""}
+{"texto":"Due to DALL·E's generation limits, I've curated some preexisting images to illustrate many prompts, so special thanks to"}
+{"texto":"everyone whose output has made an appearance here. And"}
+{"texto":"thanks to the creators of two different DALL-E search tools for"}
+{"texto":"making it easy to find examples!"}
+{"texto":""}
+{"texto":"Finally, thanks to Abby for enduring her DALL·E widowhood"}
+{"texto":"over the past few days as I've put this book together!"}
+{"texto":""}
+{"texto":"\fhttps://dallery.gallery"}
+{"texto":"@dallery.gallery"}
+{"texto":"newsletter"}
+{"texto":"The DALL·E"}
+{"texto":"prompt book"}
+{"texto":""}
+{"texto":"@guyp"}
+{"texto":""}
+{"texto":"brought to you"}
+{"texto":"by the DALL·Ery"}
+{"texto":"GALL·Ery"}
+{"texto":""}
+{"texto":"guy@copytofollow.com"}
+{"texto":""}
+{"texto":"\f"}
